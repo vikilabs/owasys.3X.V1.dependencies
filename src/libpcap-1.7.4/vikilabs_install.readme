@@ -1,0 +1,19 @@
+	
+#Steps
+
+	Cross-compiling  TCP Dump in to OWA
+	- wget http://www.tcpdump.org/release/libpcap-1.7.4.tar.gz
+	- tar -zxvf libpcap-1.7.4.tar.gz
+	- cd libpcap-1.7.4/
+	- export CC=arm-none-linux-gnueabi-gcc
+	- ./configure --host=arm-linux --with-pcap=linux
+	- make
+	- arm-none-linux-gnueabi-strip libpcap*.so*
+	- cd /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/
+	- 
+
+	[getting issues - ]
+	[http://www.tcpdump.org/#latest-releases]
+	[https://www.owasys.com/en/developers-zone/owa3x/view?file=doc/crosscompiling_libpcap_and_tcpdump.md]
+
+
