@@ -1,10 +1,25 @@
-export CROSS_COMPILE="arm-none-linux-gnueabi"
+sudo ls > /dev/null
+PATH=$PATH:/opt/crosstool/arm-none-linux-gnueabi/bin
+export PATH
+export AR=/opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-ar
+export AS=/opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-as
+export LD=/opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-ld
+export RANLIB=/opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-ranlib
+export CC=/opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-gcc
+export NM=/opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-nm
+export CXX=/opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-g++
+export LIBFFI_CFLAGS='-I/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/include/'
+export LIBFFI_LIBS='-L/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/lib -lffi'
+
+
+export CROSS_COMPILE="/opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi"
 export AR=${CROSS_COMPILE}-ar
 export AS=${CROSS_COMPILE}-as
 export LD=${CROSS_COMPILE}-ld
 export RANLIB=${CROSS_COMPILE}-ranlib
 export CC=${CROSS_COMPILE}-gcc
 export NM=${CROSS_COMPILE}-nm
+
 
 echo "Assuming openssl is installed already"
 

@@ -47,7 +47,7 @@
 
 		- $arm-none-linux-gnueabi-strip --strip-unneeded libcurl.so
 
-	2. On ubuntu all shared libraries for OWASYS are located at 
+	2. On ubuntu all shared( dynamic )/static libraries for OWASYS are located at 
 
 		- /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/
 
@@ -55,7 +55,7 @@
 		
 		- /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/include/
 	
-	4. On OWASYS Device the shared libraries are at
+	4. On OWASYS Device the shared( dynamic )/static libraries are at
 		
 		- /lib
 

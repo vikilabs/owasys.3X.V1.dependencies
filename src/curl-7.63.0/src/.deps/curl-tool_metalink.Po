@@ -1,0 +1,224 @@
+curl-tool_metalink.o: tool_metalink.c tool_setup.h ../lib/curl_setup.h \
+ ../lib/curl_config.h ../include/curl/curl.h ../include/curl/curlver.h \
+ ../include/curl/system.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stddef.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/byteswap.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/uio.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/uio.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/socket.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sockaddr.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/socket.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/sockios.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stdarg.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include-fixed/limits.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include-fixed/syslimits.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/limits.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix1_lim.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/local_lim.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/limits.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix2_lim.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/xlocale.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/time.h \
+ ../include/curl/easy.h ../include/curl/multi.h ../include/curl/curl.h \
+ ../include/curl/urlapi.h ../include/curl/typecheck-gcc.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/assert.h \
+ ../lib/curl_setup_once.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string2.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/ctype.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/errno.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/errno.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/errno.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/errno.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/stat.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stat.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stdbool.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/confname.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h \
+ ../lib/curl_ctype.h ../lib/curl_setup.h
+
+tool_setup.h:
+
+../lib/curl_setup.h:
+
+../lib/curl_config.h:
+
+../include/curl/curl.h:
+
+../include/curl/curlver.h:
+
+../include/curl/system.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stddef.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/byteswap.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/uio.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/uio.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/socket.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sockaddr.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/socket.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/sockios.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stdarg.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include-fixed/limits.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include-fixed/syslimits.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/limits.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix1_lim.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/local_lim.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/limits.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix2_lim.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/xlocale.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/time.h:
+
+../include/curl/easy.h:
+
+../include/curl/multi.h:
+
+../include/curl/curl.h:
+
+../include/curl/urlapi.h:
+
+../include/curl/typecheck-gcc.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/assert.h:
+
+../lib/curl_setup_once.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string2.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/ctype.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/errno.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/errno.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/errno.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/errno.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/stat.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stat.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stdbool.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/confname.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h:
+
+../lib/curl_ctype.h:
+
+../lib/curl_setup.h:
