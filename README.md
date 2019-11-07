@@ -10,6 +10,7 @@
 	- libssl.so
 	- libcrypto.so
 	- libz.so
+	- libcurl.so
  
 ## Installing Libraries in Owasys OWA 3X device
 	

@@ -20,10 +20,15 @@ export RANLIB=${CROSS_COMPILE}-ranlib
 export CC=${CROSS_COMPILE}-gcc
 export NM=${CROSS_COMPILE}-nm
 
+export CPATH="/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/include/"
+export CPPFLAGS="/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/include/"
+export LDFLAGS="/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/lib"
+export LIBRARY_PATH="/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/lib"
 
 echo "Assuming openssl is installed already"
 
-./configure --prefix="$HOME/curl-for-owa3x/" --target=${CROSS_COMPILE} --host=${CROSS_COMPILE} --build=i586-pc-linux-gnu --enable-threaded-resolver  --with-ca-fallback --disable-gopher  --without-winssl --without-darwinssl --disable-manual
+./configure --prefix="$HOME/curl-for-owa3x/" --target=${CROSS_COMPILE} --host=${CROSS_COMPILE} --build=i586-pc-linux-gnu --enable-threaded-resolver  --with-ca-fallback --disable-gopher  --without-winssl --without-darwinssl --disable-manual 
+LDFLAGS="-L/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/lib" CFLAGS="-I/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/include/" CPPFLAGS="-I/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/include/"
 
 make
 

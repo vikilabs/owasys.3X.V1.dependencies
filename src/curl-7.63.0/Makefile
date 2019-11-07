@@ -317,7 +317,7 @@ AWK = gawk
 BLANK_AT_MAKETIME = 
 CC = arm-none-linux-gnueabi-gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = -Werror-implicit-function-declaration -O2 -Wno-system-headers
+CFLAGS = -Werror-implicit-function-declaration -O2 -Wno-system-headers -I/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/include/
 CFLAG_CURL_SYMBOL_HIDING = -fvisibility=hidden
 CODE_COVERAGE_CFLAGS = 
 CODE_COVERAGE_CPPFLAGS = 
@@ -327,7 +327,7 @@ CODE_COVERAGE_LDFLAGS =
 CODE_COVERAGE_LIBS = 
 CONFIGURE_OPTIONS = " '--prefix=/home/viki/curl-for-owa3x/' '--target=arm-none-linux-gnueabi' '--host=arm-none-linux-gnueabi' '--build=i586-pc-linux-gnu' '--enable-threaded-resolver' '--with-ca-fallback' '--disable-gopher' '--without-winssl' '--without-darwinssl' '--disable-manual' 'build_alias=i586-pc-linux-gnu' 'host_alias=arm-none-linux-gnueabi' 'target_alias=arm-none-linux-gnueabi' 'CC=arm-none-linux-gnueabi-gcc'"
 CPP = arm-none-linux-gnueabi-gcc -E
-CPPFLAGS = -I/usr/local/include
+CPPFLAGS = -I/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/include/
 CPPFLAG_CURL_STATICLIB = 
 CURLVERSION = 7.63.0
 CURL_CA_BUNDLE = 
@@ -383,7 +383,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 IPV6_ENABLED = 1
 LCOV = 
 LD = arm-none-linux-gnueabi-ld
-LDFLAGS = -L/usr/local/lib
+LDFLAGS = -L/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/lib
 LIBCURL_LIBS = -lssl -lcrypto -lz -lrt
 LIBMETALINK_CPPFLAGS = 
 LIBMETALINK_LDFLAGS = 
