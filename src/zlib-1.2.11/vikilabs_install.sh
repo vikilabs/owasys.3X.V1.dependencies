@@ -1,3 +1,5 @@
+PATH=$PATH:/opt/crosstool/arm-none-linux-gnueabi/bin
+export PATH
 
 #Relink Compilation Parameters for ARM
 
@@ -122,4 +124,30 @@ else
     echo "[ failure ] zlib installation failed"
     exit 1
 fi
+
+mkdir ../../stripped_lib_new
+mkdir ../../unstripped_lib_new
+
+sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libz.so* ../../unstripped_lib_new/
+
+sudo cp -r ../../unstripped_lib_new/libz.so* ../../stripped_lib_new/
+
+cd ../../stripped_lib_new/
+sudo arm-none-linux-gnueabi-strip libz.so.1.2.11
+
+if [ $? -eq 0 ]; then
+    echo "[ success ] libz stripped successfully"
+else
+    echo "[ failure ] unable to strip  libz"
+    exit 1
+fi
+
+sudo rm libz.so
+sudo rm libz.so.1
+sudo ln -s libz.so.1.2.11 libz.so
+sudo ln -s libz.so.1.2.11 libz.so.1
+
+ls -l libz.so*
+ls -l ../unstripped_lib_new/libz.so*
+
 

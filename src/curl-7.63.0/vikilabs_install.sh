@@ -44,11 +44,6 @@ else
     exit 1
 fi
 
-
-
-rm -rf ./curl-for-owa3x
-mkdir ./curl-for-owa3x
-
 echo "[ info ] Installing curl with ssl support"
 ./configure --prefix=/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr --target=${CROSS_COMPILE} --host=${CROSS_COMPILE} --build=i586-pc-linux-gnu --enable-threaded-resolver  --with-ca-fallback --disable-gopher  --without-winssl --without-darwinssl --disable-manual
 
@@ -152,14 +147,14 @@ mkdir ../../stripped_lib_new
 mkdir ../../unstripped_bin_new
 mkdir ../../unstripped_lib_new
 
-cp /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/bin/curl ../../unstripped_bin_new/
-cp /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libcurl* ../../unstripped_lib_new/
+sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/bin/curl ../../unstripped_bin_new/
+sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libcurl.so* ../../unstripped_lib_new/
 
-cp ../../unstripped_bin_new/curl ../../stripped_bin_new/
-cp ../../unstripped_lib_new/libcurl* ../../stripped_lib_new/
+sudo cp -r ../../unstripped_bin_new/curl ../../stripped_bin_new/
+sudo cp -r ../../unstripped_lib_new/libcurl.so* ../../stripped_lib_new/
 
 cd ../../stripped_bin_new/
-arm-none-linux-gnueabi-strip curl
+sudo arm-none-linux-gnueabi-strip curl
 
 if [ $? -eq 0 ]; then
     echo "[ success ] curl binary stripped successfully"
@@ -174,7 +169,7 @@ ls -l ../unstripped_bin_new/curl
 
 
 cd  ../stripped_lib_new/
-arm-none-linux-gnueabi-strip libcurl.so.4.5.0
+sudo arm-none-linux-gnueabi-strip libcurl.so.4.5.0
 
 if [ $? -eq 0 ]; then
     echo "[ success ] libcurl stripped successfully"
@@ -182,6 +177,12 @@ else
     echo "[ failure ] unable to strip  libcurl"
     exit 1
 fi
+
+
+sudo rm libcurl.so
+suro rm libcurl.so.4
+sudo ln -s libcurl.so.4.5.0 libcurl.so
+sudo ln -s libcurl.so.4.5.0 libcurl.so.4
 
 ls -l libcurl.so*
 ls -l ../unstripped_lib_new/libcurl.so*

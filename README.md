@@ -30,17 +30,18 @@
     	7. “type the file name”
     	8. Hit Okay
 
-## Installing Libraries in Ubuntu 16.04
+## Installing Libraries/Binaries in Ubuntu 16.04
 
 	- Clone this repository to your Ubuntu system
-	- cd src/openssl-1.0.2q   
-	- ./vikilabs_install.sh     #Compile and Install Open SSL Libraries for OWASYS ( On Ubuntu )
 	- cd src/zlib-1.2.11/
-	- ./vikilabs_install.sh     #Compile and Install ZLIB Libraries for OWASYS ( On Ubuntu )
+	- sudo ./vikilabs_install.sh     #Compile and Install ZLIB Libraries for OWASYS ( On Ubuntu )
+	  [ Install zlib before openssl ]
+	- cd src/openssl-1.0.2q   
+	- sudo ./vikilabs_install.sh     #Compile and Install Open SSL Libraries for OWASYS ( On Ubuntu )
 	- cd src/mosquitto-1.5.5 
-	- ./vikilabs_install.sh     #Compile and Install MOSQUITTO Libraries for OWASYS ( On Ubuntu )
+	- sudo ./vikilabs_install.sh     #Compile and Install MOSQUITTO Libraries for OWASYS ( On Ubuntu )
 	- cd src/curl-7.63.0
-	- ./vikilabs_install.sh     #Compile and Install CURL Libraries for OWASYS ( On Ubuntu )
+	- sudo ./vikilabs_install.sh     #Compile and Install CURL Libraries for OWASYS ( On Ubuntu )
 
 ## Note:
 	
