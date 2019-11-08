@@ -294,7 +294,7 @@ configure:6689: $? = 0
 configure:6768: arm-none-linux-gnueabi-gcc -o conftest    conftest.c  >&5
 configure:6768: $? = 0
 configure:6847: arm-none-linux-gnueabi-gcc -o conftest    conftest.c  >&5
-/tmp/ccqnRUC0.o: In function `main':
+/tmp/ccQRP1Vf.o: In function `main':
 conftest.c:(.text+0x8): undefined reference to `inet_ntoa_r'
 collect2: ld returned 1 exit status
 configure:6847: $? = 1
@@ -1040,7 +1040,7 @@ configure:20425: $? = 0
 configure:20427: result: yes
 configure:20445: checking for clock_gettime in libraries
 configure:20487: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c  >&5
-/tmp/ccGI2Qgf.o: In function `main':
+/tmp/ccEnL4gU.o: In function `main':
 conftest.c:(.text+0x10): undefined reference to `clock_gettime'
 collect2: ld returned 1 exit status
 configure:20487: $? = 1
@@ -1110,24 +1110,20 @@ configure:20684: checking for pkg-config
 configure:20703: found /usr/bin/pkg-config
 configure:20715: result: /usr/bin/pkg-config
 configure:20740: checking for zlib options with pkg-config
-configure:20751: result: no
-configure:20771: checking for inflateEnd in -lz
-configure:20793: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c -lz  -lrt >&5
-configure:20793: $? = 0
-configure:20802: result: yes
+configure:20754: result: found
 configure:20819: checking zlib.h usability
-configure:20819: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers  conftest.c >&5
+configure:20819: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
 configure:20819: $? = 0
 configure:20819: result: yes
 configure:20819: checking zlib.h presence
-configure:20819: arm-none-linux-gnueabi-gcc -E  conftest.c
+configure:20819: arm-none-linux-gnueabi-gcc -E   conftest.c
 configure:20819: $? = 0
 configure:20819: result: yes
 configure:20819: checking for zlib.h
 configure:20819: result: yes
 configure:20907: found both libz and libz.h header
 configure:21094: checking for BrotliDecoderDecompress in -lbrotlidec
-configure:21116: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lbrotlidec   -lz -lrt >&5
+configure:21116: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lbrotlidec   -lz -lrt >&5
 /opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/ld: cannot find -lbrotlidec
 collect2: ld returned 1 exit status
 configure:21116: $? = 1
@@ -1179,7 +1175,7 @@ configure: failed program was:
 | }
 configure:21125: result: no
 configure:21139: checking brotli/decode.h usability
-configure:21139: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:21139: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:67: fatal error: brotli/decode.h: No such file or directory
 compilation terminated.
 configure:21139: $? = 1
@@ -1253,7 +1249,7 @@ configure: failed program was:
 | #include <brotli/decode.h>
 configure:21139: result: no
 configure:21139: checking brotli/decode.h presence
-configure:21139: arm-none-linux-gnueabi-gcc -E   conftest.c
+configure:21139: arm-none-linux-gnueabi-gcc -E    conftest.c
 conftest.c:34: fatal error: brotli/decode.h: No such file or directory
 compilation terminated.
 configure:21139: $? = 1
@@ -1296,7 +1292,7 @@ configure:21139: result: no
 configure:21139: checking for brotli/decode.h
 configure:21139: result: no
 configure:21199: checking for lber.h
-configure:21237: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers  conftest.c >&5
+configure:21237: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
 conftest.c:50: fatal error: lber.h: No such file or directory
 compilation terminated.
 configure:21237: $? = 1
@@ -1365,7 +1361,7 @@ configure: failed program was:
 | 
 configure:21249: result: no
 configure:21316: checking for ldap.h
-configure:21356: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers  conftest.c >&5
+configure:21356: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
 conftest.c:53: fatal error: ldap.h: No such file or directory
 compilation terminated.
 configure:21356: $? = 1
@@ -1436,7 +1432,7 @@ configure: failed program was:
 | 
 configure:21368: result: no
 configure:21381: checking for ldapssl.h
-configure:21427: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers  conftest.c >&5
+configure:21427: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
 conftest.c:59: fatal error: ldapssl.h: No such file or directory
 compilation terminated.
 configure:21427: $? = 1
@@ -1513,7 +1509,7 @@ configure: failed program was:
 | 
 configure:21439: result: no
 configure:21452: checking for ldap_ssl.h
-configure:21494: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers  conftest.c >&5
+configure:21494: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
 conftest.c:56: fatal error: ldap_ssl.h: No such file or directory
 compilation terminated.
 configure:21494: $? = 1
@@ -1586,7 +1582,7 @@ configure: failed program was:
 | 
 configure:21506: result: no
 configure:21588: checking for LDAP libraries
-configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c -lz -lrt >&5
+configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:63: error: 'BerValue' undeclared (first use in this function)
 conftest.c:63: error: (Each undeclared identifier is reported only once
@@ -1675,7 +1671,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c -lz -lrt >&5
+configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:63: error: 'BerValue' undeclared (first use in this function)
 conftest.c:63: error: (Each undeclared identifier is reported only once
@@ -1764,7 +1760,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c -lldap -lz -lrt >&5
+configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lldap -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:63: error: 'BerValue' undeclared (first use in this function)
 conftest.c:63: error: (Each undeclared identifier is reported only once
@@ -1853,7 +1849,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c -lldap -llber -lz -lrt >&5
+configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lldap -llber -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:63: error: 'BerValue' undeclared (first use in this function)
 conftest.c:63: error: (Each undeclared identifier is reported only once
@@ -1942,7 +1938,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c -llber -lldap -lz -lrt >&5
+configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -llber -lldap -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:63: error: 'BerValue' undeclared (first use in this function)
 conftest.c:63: error: (Each undeclared identifier is reported only once
@@ -2031,7 +2027,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c -lldapssl -lldapx -lldapsdk -lz -lrt >&5
+configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lldapssl -lldapx -lldapsdk -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:63: error: 'BerValue' undeclared (first use in this function)
 conftest.c:63: error: (Each undeclared identifier is reported only once
@@ -2120,7 +2116,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c -lldapsdk -lldapx -lldapssl -lz -lrt >&5
+configure:21652: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lldapsdk -lldapx -lldapssl -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:63: error: 'BerValue' undeclared (first use in this function)
 conftest.c:63: error: (Each undeclared identifier is reported only once
@@ -2214,7 +2210,7 @@ configure:21687: WARNING: Cannot find libraries for LDAP support: LDAP disabled
 configure:21806: checking whether to enable IPv6
 configure:21823: result: yes
 configure:21869: checking if struct sockaddr_in6 has sin6_scope_id member
-configure:21891: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers  conftest.c >&5
+configure:21891: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
 configure:21891: $? = 0
 configure:21896: result: yes
 configure:21908: checking if argv can be written to
@@ -2227,76 +2223,76 @@ configure:22261: result: no
 configure:22278: checking whether to enable Apple OS native SSL/TLS
 configure:22295: result: no
 configure:22557: checking for HMAC_Update in -lcrypto
-configure:22579: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lcrypto  -lz -lrt >&5
+configure:22579: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lcrypto  -lz -lrt >&5
 configure:22579: $? = 0
 configure:22588: result: yes
 configure:22720: checking for SSL_connect in -lssl
-configure:22742: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl  -lcrypto -lz -lrt >&5
+configure:22742: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl  -lcrypto -lz -lrt >&5
 configure:22742: $? = 0
 configure:22751: result: yes
 configure:22825: checking openssl/x509.h usability
-configure:22825: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:22825: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:22825: $? = 0
 configure:22825: result: yes
 configure:22825: checking openssl/x509.h presence
-configure:22825: arm-none-linux-gnueabi-gcc -E   conftest.c
+configure:22825: arm-none-linux-gnueabi-gcc -E    conftest.c
 configure:22825: $? = 0
 configure:22825: result: yes
 configure:22825: checking for openssl/x509.h
 configure:22825: result: yes
 configure:22825: checking openssl/rsa.h usability
-configure:22825: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:22825: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:22825: $? = 0
 configure:22825: result: yes
 configure:22825: checking openssl/rsa.h presence
-configure:22825: arm-none-linux-gnueabi-gcc -E   conftest.c
+configure:22825: arm-none-linux-gnueabi-gcc -E    conftest.c
 configure:22825: $? = 0
 configure:22825: result: yes
 configure:22825: checking for openssl/rsa.h
 configure:22825: result: yes
 configure:22825: checking openssl/crypto.h usability
-configure:22825: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:22825: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:22825: $? = 0
 configure:22825: result: yes
 configure:22825: checking openssl/crypto.h presence
-configure:22825: arm-none-linux-gnueabi-gcc -E   conftest.c
+configure:22825: arm-none-linux-gnueabi-gcc -E    conftest.c
 configure:22825: $? = 0
 configure:22825: result: yes
 configure:22825: checking for openssl/crypto.h
 configure:22825: result: yes
 configure:22825: checking openssl/pem.h usability
-configure:22825: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:22825: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:22825: $? = 0
 configure:22825: result: yes
 configure:22825: checking openssl/pem.h presence
-configure:22825: arm-none-linux-gnueabi-gcc -E   conftest.c
+configure:22825: arm-none-linux-gnueabi-gcc -E    conftest.c
 configure:22825: $? = 0
 configure:22825: result: yes
 configure:22825: checking for openssl/pem.h
 configure:22825: result: yes
 configure:22825: checking openssl/ssl.h usability
-configure:22825: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:22825: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:22825: $? = 0
 configure:22825: result: yes
 configure:22825: checking openssl/ssl.h presence
-configure:22825: arm-none-linux-gnueabi-gcc -E   conftest.c
+configure:22825: arm-none-linux-gnueabi-gcc -E    conftest.c
 configure:22825: $? = 0
 configure:22825: result: yes
 configure:22825: checking for openssl/ssl.h
 configure:22825: result: yes
 configure:22825: checking openssl/err.h usability
-configure:22825: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:22825: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:22825: $? = 0
 configure:22825: result: yes
 configure:22825: checking openssl/err.h presence
-configure:22825: arm-none-linux-gnueabi-gcc -E   conftest.c
+configure:22825: arm-none-linux-gnueabi-gcc -E    conftest.c
 configure:22825: $? = 0
 configure:22825: result: yes
 configure:22825: checking for openssl/err.h
 configure:22825: result: yes
 configure:22882: checking for RAND_egd
-configure:22882: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccSnFPYs.o: In function `main':
+configure:22882: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/ccnzX63k.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `RAND_egd'
 collect2: ld returned 1 exit status
 configure:22882: $? = 1
@@ -2374,12 +2370,12 @@ configure: failed program was:
 | }
 configure:22882: result: no
 configure:22882: checking for SSL_get_shutdown
-configure:22882: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:22882: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:22882: $? = 0
 configure:22882: result: yes
 configure:22882: checking for SSLv2_client_method
-configure:22882: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/cckzcgcY.o: In function `main':
+configure:22882: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/ccko3aSE.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `SSLv2_client_method'
 collect2: ld returned 1 exit status
 configure:22882: $? = 1
@@ -2458,7 +2454,7 @@ configure: failed program was:
 | }
 configure:22882: result: no
 configure:22892: checking for BoringSSL
-configure:22912: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:22912: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:53: fatal error: openssl/base.h: No such file or directory
 compilation terminated.
 configure:22912: $? = 1
@@ -2530,7 +2526,7 @@ configure: failed program was:
 | 
 configure:22925: result: no
 configure:22931: checking for libressl
-configure:22949: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:22949: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:58: error: 'LIBRESSL_VERSION_NUMBER' undeclared (first use in this function)
 conftest.c:58: error: (Each undeclared identifier is reported only once
@@ -2602,12 +2598,12 @@ configure: failed program was:
 | 
 configure:22962: result: no
 configure:22984: checking for OpenSSL headers version
-configure:23014: arm-none-linux-gnueabi-gcc -E    conftest.c
+configure:23014: arm-none-linux-gnueabi-gcc -E     conftest.c
 configure:23014: $? = 0
 configure:23076: result: 1.1.0 - 0x101000bfL
 configure:23085: checking for OpenSSL library version
-configure:23115: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/cc4eEHKe.o: In function `main':
+configure:23115: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/cceby1w9.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `ERR_clear_last_mark'
 collect2: ld returned 1 exit status
 configure:23115: $? = 1
@@ -2686,14 +2682,14 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:23189: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:23189: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:23189: $? = 0
 configure:23612: result: 1.1.0
 configure:23620: checking for OpenSSL headers and library versions matching
 configure:23630: result: yes
 configure:23689: WARNING: skipped the /dev/urandom detection when cross-compiling
 configure:23707: checking for SRP_Calc_client_key in -lcrypto
-configure:23729: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lcrypto  -lssl -lcrypto -lz -lrt >&5
+configure:23729: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lcrypto  -lssl -lcrypto -lz -lrt >&5
 configure:23729: $? = 0
 configure:23738: result: yes
 configure:25541: built with one SSL backend
@@ -2703,8 +2699,8 @@ configure:25709: result: no
 configure:25713: checking whether to use builtin CA store of SSL library
 configure:25727: result: yes
 configure:25752: checking for library containing psl_builtin
-configure:25780: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccyrUJFL.o: In function `main':
+configure:25780: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/ccIxx4JM.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `psl_builtin'
 collect2: ld returned 1 exit status
 configure:25780: $? = 1
@@ -2773,7 +2769,7 @@ configure: failed program was:
 |  ;
 |  return 0;
 | }
-configure:25780: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lpsl  -lssl -lcrypto -lz -lrt >&5
+configure:25780: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lpsl  -lssl -lcrypto -lz -lrt >&5
 /opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/ld: cannot find -lpsl
 collect2: ld returned 1 exit status
 configure:25780: $? = 1
@@ -2845,7 +2841,7 @@ configure: failed program was:
 configure:25797: result: no
 configure:25809: WARNING: libpsl was not found
 configure:26883: checking for RTMP_Init in -lrtmp
-configure:26905: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lrtmp  -lrtmp -lssl -lcrypto -lz -lrt >&5
+configure:26905: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers         conftest.c -lrtmp  -lrtmp -lssl -lcrypto -lz -lrt >&5
 /opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/ld: cannot find -lrtmp
 collect2: ld returned 1 exit status
 configure:26905: $? = 1
@@ -2932,7 +2928,7 @@ configure:27466: IDN_LDFLAGS: ""
 configure:27468: IDN_CPPFLAGS: ""
 configure:27470: IDN_DIR: ""
 configure:27478: checking if idn2_lookup_ul can be linked
-configure:27507: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lidn2 -lssl -lcrypto -lz -lrt >&5
+configure:27507: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers         conftest.c -lidn2 -lssl -lcrypto -lz -lrt >&5
 /opt/crosstool/arm-none-linux-gnueabi/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/ld: cannot find -lidn2
 collect2: ld returned 1 exit status
 configure:27507: $? = 1
@@ -3015,7 +3011,7 @@ configure: failed program was:
 | 
 configure:27515: result: no
 configure:27526: checking idn2.h usability
-configure:27526: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
+configure:27526: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c >&5
 conftest.c:86: fatal error: idn2.h: No such file or directory
 compilation terminated.
 configure:27526: $? = 1
@@ -3108,7 +3104,7 @@ configure: failed program was:
 | #include <idn2.h>
 configure:27526: result: no
 configure:27526: checking idn2.h presence
-configure:27526: arm-none-linux-gnueabi-gcc -E    conftest.c
+configure:27526: arm-none-linux-gnueabi-gcc -E     conftest.c
 conftest.c:53: fatal error: idn2.h: No such file or directory
 compilation terminated.
 configure:27526: $? = 1
@@ -3179,13 +3175,13 @@ configure:27715: result: no
 configure:27853: checking for ANSI C header files
 configure:27956: result: yes
 configure:27966: checking for malloc.h
-configure:27991: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:27991: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:27991: $? = 0
 configure:28003: result: yes
-configure:28031: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28031: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28031: $? = 0
 configure:28054: checking for memory.h
-configure:28079: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28079: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:64: error: implicit declaration of function 'free'
 conftest.c:64: warning: incompatible implicit declaration of built-in function 'free'
@@ -3267,23 +3263,23 @@ configure:28186: result: yes
 configure:28186: checking for sys/time.h
 configure:28186: result: yes
 configure:28186: checking for sys/select.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for sys/socket.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for sys/ioctl.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for sys/uio.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for assert.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for unistd.h
@@ -3291,19 +3287,19 @@ configure:28186: result: yes
 configure:28186: checking for stdlib.h
 configure:28186: result: yes
 configure:28186: checking for arpa/inet.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for net/if.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for netinet/in.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for netinet/in6.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:92: fatal error: netinet/in6.h: No such file or directory
 compilation terminated.
 configure:28186: $? = 1
@@ -3402,23 +3398,23 @@ configure: failed program was:
 | #include <netinet/in6.h>
 configure:28186: result: no
 configure:28186: checking for sys/un.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for linux/tcp.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for netinet/tcp.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for netdb.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for sys/sockio.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:96: fatal error: sys/sockio.h: No such file or directory
 compilation terminated.
 configure:28186: $? = 1
@@ -3523,33 +3519,33 @@ configure:28186: result: no
 configure:28186: checking for sys/stat.h
 configure:28186: result: yes
 configure:28186: checking for sys/param.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for termios.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for termio.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for sgtty.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for fcntl.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for alloca.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for time.h
 configure:28186: result: yes
 configure:28186: checking for io.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:104: fatal error: io.h: No such file or directory
 compilation terminated.
 configure:28186: $? = 1
@@ -3660,15 +3656,15 @@ configure: failed program was:
 | #include <io.h>
 configure:28186: result: no
 configure:28186: checking for pwd.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for utime.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for sys/utime.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:106: fatal error: sys/utime.h: No such file or directory
 compilation terminated.
 configure:28186: $? = 1
@@ -3781,15 +3777,15 @@ configure: failed program was:
 | #include <sys/utime.h>
 configure:28186: result: no
 configure:28186: checking for sys/poll.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for poll.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for socket.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:108: fatal error: socket.h: No such file or directory
 compilation terminated.
 configure:28186: $? = 1
@@ -3904,31 +3900,31 @@ configure: failed program was:
 | #include <socket.h>
 configure:28186: result: no
 configure:28186: checking for sys/resource.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for libgen.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for locale.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for errno.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for stdbool.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for arpa/tftp.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for sys/filio.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:114: fatal error: sys/filio.h: No such file or directory
 compilation terminated.
 configure:28186: $? = 1
@@ -4049,29 +4045,29 @@ configure: failed program was:
 | #include <sys/filio.h>
 configure:28186: result: no
 configure:28186: checking for sys/wait.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28186: checking for setjmp.h
-configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28186: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28186: $? = 0
 configure:28186: result: yes
 configure:28221: checking for an ANSI C-conforming const
-configure:28286: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28286: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28286: $? = 0
 configure:28293: result: yes
 configure:28302: checking for compiler support of C99 variadic macro style
-configure:28332: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28332: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28332: $? = 0
 configure:28344: result: yes
 configure:28355: checking for compiler support of old gcc variadic macro style
-configure:28385: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28385: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28385: $? = 0
 configure:28397: result: yes
 configure:28409: checking for size_t
-configure:28409: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28409: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28409: $? = 0
-configure:28409: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28409: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:128: error: expected expression before ')' token
 configure:28409: $? = 1
@@ -4220,23 +4216,23 @@ configure:28458: result: yes
 configure:28458: checking for sys/socket.h
 configure:28458: result: yes
 configure:28468: checking for struct timeval
-configure:28521: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28521: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28521: $? = 0
 configure:28533: result: yes
 configure:28590: checking size of size_t
-configure:28609: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28609: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28609: $? = 0
 configure:28621: result: 4
 configure:28629: checking size of long
-configure:28648: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28648: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28648: $? = 0
 configure:28660: result: 4
 configure:28668: checking size of int
-configure:28687: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28687: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28687: $? = 0
 configure:28699: result: 4
 configure:28707: checking size of short
-configure:28726: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28726: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:108: error: duplicate case value
 conftest.c:108: error: previously used here
@@ -4353,7 +4349,7 @@ configure: failed program was:
 |  ;
 |  return 0;
 | }
-configure:28726: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28726: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:108: error: duplicate case value
 conftest.c:108: error: previously used here
@@ -4470,7 +4466,7 @@ configure: failed program was:
 |  ;
 |  return 0;
 | }
-configure:28726: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28726: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:108: error: duplicate case value
 conftest.c:108: error: previously used here
@@ -4587,15 +4583,15 @@ configure: failed program was:
 |  ;
 |  return 0;
 | }
-configure:28726: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28726: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28726: $? = 0
 configure:28738: result: 2
 configure:28746: checking size of time_t
-configure:28765: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28765: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28765: $? = 0
 configure:28777: result: 4
 configure:28785: checking size of off_t
-configure:28804: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28804: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:110: error: duplicate case value
 conftest.c:110: error: previously used here
@@ -4714,11 +4710,11 @@ configure: failed program was:
 |  ;
 |  return 0;
 | }
-configure:28804: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28804: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28804: $? = 0
 configure:28816: result: 8
 configure:28827: checking size of curl_off_t
-configure:28848: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers -I./include   conftest.c >&5
+configure:28848: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers -I./include    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:113: error: duplicate case value
 conftest.c:113: error: previously used here
@@ -4840,13 +4836,13 @@ configure: failed program was:
 |  ;
 |  return 0;
 | }
-configure:28848: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers -I./include   conftest.c >&5
+configure:28848: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers -I./include    conftest.c >&5
 configure:28848: $? = 0
 configure:28860: result: 8
 configure:28870: checking for long long
-configure:28870: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28870: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28870: $? = 0
-configure:28870: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28870: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:141: error: expected expression before ')' token
 configure:28870: $? = 1
@@ -4998,13 +4994,13 @@ configure: failed program was:
 | }
 configure:28870: result: yes
 configure:28881: checking if numberLL works
-configure:28898: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28898: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28898: $? = 0
 configure:28900: result: yes
 configure:28917: checking for ssize_t
-configure:28917: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28917: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28917: $? = 0
-configure:28917: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28917: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:143: error: expected expression before ')' token
 configure:28917: $? = 1
@@ -5158,9 +5154,9 @@ configure: failed program was:
 | }
 configure:28917: result: yes
 configure:28928: checking for bool
-configure:28928: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28928: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28928: $? = 0
-configure:28928: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28928: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:119: error: expected expression before ')' token
 configure:28928: $? = 1
@@ -5290,9 +5286,9 @@ configure: failed program was:
 | }
 configure:28928: result: yes
 configure:28947: checking for sa_family_t
-configure:28947: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28947: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:28947: $? = 0
-configure:28947: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:28947: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:117: error: expected expression before ')' token
 configure:28947: $? = 1
@@ -5427,7 +5423,7 @@ configure:29036: checking for poll.h
 configure:29036: result: yes
 configure:29036: checking for sys/poll.h
 configure:29036: result: yes
-configure:29072: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29072: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:133: error: 'force' undeclared (first use in this function)
 conftest.c:133: error: (Each undeclared identifier is reported only once
@@ -5575,9 +5571,9 @@ configure: failed program was:
 | }
 | 
 configure:29096: checking for in_addr_t
-configure:29096: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29096: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:29096: $? = 0
-configure:29096: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29096: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:145: error: expected expression before ')' token
 configure:29096: $? = 1
@@ -5733,9 +5729,9 @@ configure: failed program was:
 | }
 configure:29096: result: yes
 configure:29212: checking for struct sockaddr_storage
-configure:29212: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29212: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:29212: $? = 0
-configure:29212: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29212: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:141: error: expected expression before ')' token
 configure:29212: $? = 1
@@ -5887,19 +5883,19 @@ configure: failed program was:
 | }
 configure:29212: result: yes
 configure:29249: checking signal.h usability
-configure:29249: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29249: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:29249: $? = 0
 configure:29249: result: yes
 configure:29249: checking signal.h presence
-configure:29249: arm-none-linux-gnueabi-gcc -E   conftest.c
+configure:29249: arm-none-linux-gnueabi-gcc -E    conftest.c
 configure:29249: $? = 0
 configure:29249: result: yes
 configure:29249: checking for signal.h
 configure:29249: result: yes
 configure:29259: checking for sig_atomic_t
-configure:29259: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29259: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:29259: $? = 0
-configure:29259: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29259: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:123: error: expected expression before ')' token
 configure:29259: $? = 1
@@ -6033,11 +6029,11 @@ configure: failed program was:
 | }
 configure:29259: result: yes
 configure:29276: checking if sig_atomic_t is already defined as volatile
-configure:29296: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:29296: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:29296: $? = 0
 configure:29298: result: no
 configure:29321: checking return type of signal handlers
-configure:29338: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29338: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:121: error: void value not ignored as it ought to be
 configure:29338: $? = 1
@@ -6172,11 +6168,11 @@ configure:29358: result: yes
 configure:29358: checking for sys/socket.h
 configure:29358: result: yes
 configure:29369: checking for select
-configure:29421: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:29421: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:29421: $? = 0
 configure:29423: result: yes
 configure:29438: checking types of args and return type for select
-configure:29521: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29521: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:29521: $? = 0
 configure:29534: result: int,fd_set *,struct timeval *,int
 configure:29619: checking for sys/types.h
@@ -6184,11 +6180,11 @@ configure:29619: result: yes
 configure:29619: checking for sys/socket.h
 configure:29619: result: yes
 configure:29630: checking for recv
-configure:29668: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:29668: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:29668: $? = 0
 configure:29670: result: yes
 configure:29685: checking types of args and return type for recv
-configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:156: error: conflicting types for 'recv'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:148: note: previous declaration of 'recv' was here
 configure:29745: $? = 1
@@ -6363,7 +6359,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:156: error: conflicting types for 'recv'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:148: note: previous declaration of 'recv' was here
 configure:29745: $? = 1
@@ -6538,7 +6534,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:156: error: conflicting types for 'recv'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:148: note: previous declaration of 'recv' was here
 configure:29745: $? = 1
@@ -6713,7 +6709,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:156: error: conflicting types for 'recv'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:148: note: previous declaration of 'recv' was here
 configure:29745: $? = 1
@@ -6888,7 +6884,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:156: error: conflicting types for 'recv'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:148: note: previous declaration of 'recv' was here
 configure:29745: $? = 1
@@ -7063,7 +7059,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:156: error: conflicting types for 'recv'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:148: note: previous declaration of 'recv' was here
 configure:29745: $? = 1
@@ -7238,7 +7234,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:156: error: conflicting types for 'recv'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:148: note: previous declaration of 'recv' was here
 configure:29745: $? = 1
@@ -7413,7 +7409,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:156: error: conflicting types for 'recv'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:148: note: previous declaration of 'recv' was here
 configure:29745: $? = 1
@@ -7588,7 +7584,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29745: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:29745: $? = 0
 configure:29759: result: int,void *,size_t,int,int
 configure:29810: checking for sys/types.h
@@ -7596,11 +7592,11 @@ configure:29810: result: yes
 configure:29810: checking for sys/socket.h
 configure:29810: result: yes
 configure:29821: checking for send
-configure:29859: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:29859: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:29859: $? = 0
 configure:29861: result: yes
 configure:29876: checking types of args and return type for send
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -7782,7 +7778,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -7964,7 +7960,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -8146,7 +8142,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -8328,7 +8324,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -8510,7 +8506,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -8692,7 +8688,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -8874,7 +8870,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -9056,7 +9052,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -9238,7 +9234,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -9420,7 +9416,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -9602,7 +9598,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -9784,7 +9780,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -9966,7 +9962,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -10148,7 +10144,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -10330,7 +10326,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -10512,7 +10508,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -10694,7 +10690,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -10876,7 +10872,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -11058,7 +11054,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -11240,7 +11236,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -11422,7 +11418,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -11604,7 +11600,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -11786,7 +11782,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:164: error: conflicting types for 'send'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/socket.h:141: note: previous declaration of 'send' was here
 configure:29935: $? = 1
@@ -11968,7 +11964,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:29935: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:29935: $? = 0
 configure:29949: result: int,const void *,size_t,int,int
 configure:30037: checking for sys/types.h
@@ -11976,7 +11972,7 @@ configure:30037: result: yes
 configure:30037: checking for sys/socket.h
 configure:30037: result: yes
 configure:30047: checking for MSG_NOSIGNAL
-configure:30089: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:30089: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:30089: $? = 0
 configure:30101: result: yes
 configure:30127: checking for sys/types.h
@@ -11984,13 +11980,13 @@ configure:30127: result: yes
 configure:30127: checking for unistd.h
 configure:30127: result: yes
 configure:30146: checking if alarm can be linked
-configure:30175: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:30175: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:30175: $? = 0
 configure:30177: result: yes
 configure:30192: checking if alarm is prototyped
 configure:30203: result: yes
 configure:30219: checking if alarm is compilable
-configure:30238: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:30238: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:30238: $? = 0
 configure:30240: result: yes
 configure:30255: checking if alarm usage allowed
@@ -12008,13 +12004,13 @@ configure:30329: result: yes
 configure:30329: checking for libgen.h
 configure:30329: result: yes
 configure:30348: checking if basename can be linked
-configure:30377: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:30377: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:30377: $? = 0
 configure:30379: result: yes
 configure:30394: checking if basename is prototyped
 configure:30407: result: yes
 configure:30423: checking if basename is compilable
-configure:30444: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:30444: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:30444: $? = 0
 configure:30446: result: yes
 configure:30461: checking if basename usage allowed
@@ -12026,7 +12022,7 @@ configure:30507: result: yes
 configure:30507: checking for socket.h
 configure:30507: result: no
 configure:30526: checking if closesocket can be linked
-configure:30546: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:30546: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:184: error: implicit declaration of function 'closesocket'
 configure:30546: $? = 1
@@ -12229,7 +12225,7 @@ configure:30674: result: yes
 configure:30674: checking for sys/socket.h
 configure:30674: result: yes
 configure:30693: checking if CloseSocket can be linked
-configure:30712: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:30712: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:171: error: implicit declaration of function 'CloseSocket'
 configure:30712: $? = 1
@@ -12415,13 +12411,13 @@ configure:30720: result: no
 configure:30805: checking if CloseSocket might be used
 configure:30820: result: no
 configure:30832: checking if connect can be linked
-configure:30853: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:30853: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:30853: $? = 0
 configure:30855: result: yes
 configure:30870: checking if connect is prototyped
 configure:30883: result: yes
 configure:30899: checking if connect is compilable
-configure:30920: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:30920: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:30920: $? = 0
 configure:30922: result: yes
 configure:30937: checking if connect usage allowed
@@ -12435,13 +12431,13 @@ configure:30986: result: yes
 configure:30986: checking for fcntl.h
 configure:30986: result: yes
 configure:31005: checking if fcntl can be linked
-configure:31034: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:31034: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:31034: $? = 0
 configure:31036: result: yes
 configure:31051: checking if fcntl is prototyped
 configure:31062: result: yes
 configure:31078: checking if fcntl is compilable
-configure:31097: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:31097: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:31097: $? = 0
 configure:31099: result: yes
 configure:31114: checking if fcntl usage allowed
@@ -12449,7 +12445,7 @@ configure:31117: result: yes
 configure:31127: checking if fcntl might be used
 configure:31133: result: yes
 configure:31153: checking if fcntl O_NONBLOCK is compilable
-configure:31173: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:31173: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:31173: $? = 0
 configure:31175: result: yes
 configure:31190: checking if fcntl O_NONBLOCK usage allowed
@@ -12459,17 +12455,17 @@ configure:31207: result: yes
 configure:31240: checking for sys/types.h
 configure:31240: result: yes
 configure:31240: checking for stdio.h
-configure:31240: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:31240: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:31240: $? = 0
 configure:31240: result: yes
 configure:31259: checking if fdopen can be linked
-configure:31288: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:31288: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:31288: $? = 0
 configure:31290: result: yes
 configure:31305: checking if fdopen is prototyped
 configure:31316: result: yes
 configure:31332: checking if fdopen is compilable
-configure:31351: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:31351: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:31351: $? = 0
 configure:31353: result: yes
 configure:31368: checking if fdopen usage allowed
@@ -12487,13 +12483,13 @@ configure:31599: result: yes
 configure:31599: checking for netdb.h
 configure:31599: result: yes
 configure:31618: checking if freeaddrinfo can be linked
-configure:31638: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:31638: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:31638: $? = 0
 configure:31640: result: yes
 configure:31655: checking if freeaddrinfo is prototyped
 configure:31668: result: yes
 configure:31684: checking if freeaddrinfo is compilable
-configure:31704: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:31704: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:31704: $? = 0
 configure:31706: result: yes
 configure:31721: checking if freeaddrinfo usage allowed
@@ -12507,17 +12503,17 @@ configure:31773: result: yes
 configure:31773: checking for netinet/in.h
 configure:31773: result: yes
 configure:31773: checking for ifaddrs.h
-configure:31773: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:31773: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:31773: $? = 0
 configure:31773: result: yes
 configure:31792: checking if freeifaddrs can be linked
-configure:31821: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:31821: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:31821: $? = 0
 configure:31823: result: yes
 configure:31838: checking if freeifaddrs is prototyped
 configure:31849: result: yes
 configure:31865: checking if freeifaddrs is compilable
-configure:31883: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:31883: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:31883: $? = 0
 configure:31885: result: yes
 configure:31900: checking if freeifaddrs usage allowed
@@ -12527,17 +12523,17 @@ configure:31919: result: yes
 configure:31946: checking for sys/types.h
 configure:31946: result: yes
 configure:31946: checking for sys/xattr.h
-configure:31946: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:31946: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:31946: $? = 0
 configure:31946: result: yes
 configure:31966: checking if fsetxattr can be linked
-configure:31995: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:31995: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:31995: $? = 0
 configure:31997: result: yes
 configure:32012: checking if fsetxattr is prototyped
 configure:32023: result: yes
 configure:32040: checking if fsetxattr takes 5 args.
-configure:32059: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:32059: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:32059: $? = 0
 configure:32061: result: yes
 configure:32111: checking if fsetxattr is compilable
@@ -12547,13 +12543,13 @@ configure:32126: result: yes
 configure:32136: checking if fsetxattr might be used
 configure:32142: result: yes
 configure:32174: checking if ftruncate can be linked
-configure:32203: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:32203: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:32203: $? = 0
 configure:32205: result: yes
 configure:32220: checking if ftruncate is prototyped
 configure:32231: result: yes
 configure:32247: checking if ftruncate is compilable
-configure:32266: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:32266: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:32266: $? = 0
 configure:32268: result: yes
 configure:32283: checking if ftruncate usage allowed
@@ -12565,13 +12561,13 @@ configure:32329: result: yes
 configure:32329: checking for stdlib.h
 configure:32329: result: yes
 configure:32350: checking if getaddrinfo can be linked
-configure:32371: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:32371: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:32371: $? = 0
 configure:32373: result: yes
 configure:32388: checking if getaddrinfo is prototyped
 configure:32401: result: yes
 configure:32417: checking if getaddrinfo is compilable
-configure:32438: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:32438: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:32438: $? = 0
 configure:32440: result: yes
 configure:32528: checking if getaddrinfo usage allowed
@@ -12579,11 +12575,11 @@ configure:32531: result: yes
 configure:32541: checking if getaddrinfo might be used
 configure:32548: result: yes
 configure:32564: checking if getaddrinfo is threadsafe
-configure:32629: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:32629: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:32629: $? = 0
-configure:32671: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:32671: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:32671: $? = 0
-configure:32702: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:32702: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:193: error: 'force' undeclared (first use in this function)
 conftest.c:193: error: (Each undeclared identifier is reported only once
@@ -12792,13 +12788,13 @@ configure: failed program was:
 | 
 configure:32720: result: yes
 configure:32741: checking if gai_strerror can be linked
-configure:32761: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:32761: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:32761: $? = 0
 configure:32763: result: yes
 configure:32778: checking if gai_strerror is prototyped
 configure:32790: result: yes
 configure:32806: checking if gai_strerror is compilable
-configure:32826: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:32826: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:32826: $? = 0
 configure:32828: result: yes
 configure:32843: checking if gai_strerror usage allowed
@@ -12806,13 +12802,13 @@ configure:32846: result: yes
 configure:32856: checking if gai_strerror might be used
 configure:32862: result: yes
 configure:32883: checking if gethostbyaddr can be linked
-configure:32903: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:32903: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:32903: $? = 0
 configure:32905: result: yes
 configure:32920: checking if gethostbyaddr is prototyped
 configure:32932: result: yes
 configure:32948: checking if gethostbyaddr is compilable
-configure:32968: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:32968: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:32968: $? = 0
 configure:32970: result: yes
 configure:32985: checking if gethostbyaddr usage allowed
@@ -12820,13 +12816,13 @@ configure:32988: result: yes
 configure:32998: checking if gethostbyaddr might be used
 configure:33004: result: yes
 configure:33026: checking if gethostbyaddr_r can be linked
-configure:33055: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:33055: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:33055: $? = 0
 configure:33057: result: yes
 configure:33072: checking if gethostbyaddr_r is prototyped
 configure:33083: result: yes
 configure:33100: checking if gethostbyaddr_r takes 5 args.
-configure:33119: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:33119: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:199: error: too few arguments to function 'gethostbyaddr_r'
 configure:33119: $? = 1
@@ -13038,7 +13034,7 @@ configure: failed program was:
 | 
 configure:33128: result: no
 configure:33136: checking if gethostbyaddr_r takes 7 args.
-configure:33155: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:33155: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:199: error: too few arguments to function 'gethostbyaddr_r'
 configure:33155: $? = 1
@@ -13250,7 +13246,7 @@ configure: failed program was:
 | 
 configure:33164: result: no
 configure:33172: checking if gethostbyaddr_r takes 8 args.
-configure:33191: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:33191: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:33191: $? = 0
 configure:33193: result: yes
 configure:33207: checking if gethostbyaddr_r is compilable
@@ -13260,13 +13256,13 @@ configure:33222: result: yes
 configure:33232: checking if gethostbyaddr_r might be used
 configure:33238: result: yes
 configure:33274: checking if gethostbyname can be linked
-configure:33294: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:33294: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:33294: $? = 0
 configure:33296: result: yes
 configure:33311: checking if gethostbyname is prototyped
 configure:33323: result: yes
 configure:33339: checking if gethostbyname is compilable
-configure:33359: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:33359: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:33359: $? = 0
 configure:33361: result: yes
 configure:33376: checking if gethostbyname usage allowed
@@ -13274,13 +13270,13 @@ configure:33379: result: yes
 configure:33389: checking if gethostbyname might be used
 configure:33395: result: yes
 configure:33417: checking if gethostbyname_r can be linked
-configure:33446: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:33446: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:33446: $? = 0
 configure:33448: result: yes
 configure:33463: checking if gethostbyname_r is prototyped
 configure:33474: result: yes
 configure:33491: checking if gethostbyname_r takes 3 args.
-configure:33510: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:33510: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:202: error: too few arguments to function 'gethostbyname_r'
 configure:33510: $? = 1
@@ -13495,7 +13491,7 @@ configure: failed program was:
 | 
 configure:33519: result: no
 configure:33527: checking if gethostbyname_r takes 5 args.
-configure:33546: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:33546: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:202: error: too few arguments to function 'gethostbyname_r'
 configure:33546: $? = 1
@@ -13710,7 +13706,7 @@ configure: failed program was:
 | 
 configure:33555: result: no
 configure:33563: checking if gethostbyname_r takes 6 args.
-configure:33582: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:33582: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:33582: $? = 0
 configure:33584: result: yes
 configure:33598: checking if gethostbyname_r is compilable
@@ -13720,17 +13716,17 @@ configure:33613: result: yes
 configure:33623: checking if gethostbyname_r might be used
 configure:33629: result: yes
 configure:33675: checking if gethostname can be linked
-configure:33695: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:33695: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:33695: $? = 0
 configure:33697: result: yes
 configure:33712: checking if gethostname is prototyped
 configure:33724: result: yes
 configure:33740: checking if gethostname is compilable
-configure:33760: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:33760: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:33760: $? = 0
 configure:33762: result: yes
 configure:33777: checking for gethostname arg 2 data type
-configure:33803: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:33803: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:222: error: conflicting types for 'gethostname'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h:895: note: previous declaration of 'gethostname' was here
 configure:33803: $? = 1
@@ -13968,7 +13964,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:33803: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:33803: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:33803: $? = 0
 configure:33812: result: unsigned int
 configure:33824: checking if gethostname usage allowed
@@ -13976,13 +13972,13 @@ configure:33827: result: yes
 configure:33837: checking if gethostname might be used
 configure:33843: result: yes
 configure:33865: checking if getifaddrs can be linked
-configure:33894: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:33894: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:33894: $? = 0
 configure:33896: result: yes
 configure:33911: checking if getifaddrs is prototyped
 configure:33922: result: yes
 configure:33938: checking if getifaddrs is compilable
-configure:33957: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:33957: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:33957: $? = 0
 configure:33959: result: yes
 configure:34033: checking if getifaddrs usage allowed
@@ -13990,13 +13986,13 @@ configure:34036: result: yes
 configure:34046: checking if getifaddrs might be used
 configure:34053: result: yes
 configure:34075: checking if getservbyport_r can be linked
-configure:34104: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:34104: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:34104: $? = 0
 configure:34106: result: yes
 configure:34121: checking if getservbyport_r is prototyped
 configure:34132: result: yes
 configure:34149: checking if getservbyport_r takes 4 args.
-configure:34168: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:34168: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:207: error: too few arguments to function 'getservbyport_r'
 configure:34168: $? = 1
@@ -14216,7 +14212,7 @@ configure: failed program was:
 | 
 configure:34177: result: no
 configure:34185: checking if getservbyport_r takes 5 args.
-configure:34204: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:34204: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:207: error: too few arguments to function 'getservbyport_r'
 configure:34204: $? = 1
@@ -14436,7 +14432,7 @@ configure: failed program was:
 | 
 configure:34213: result: no
 configure:34221: checking if getservbyport_r takes 6 args.
-configure:34240: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:34240: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:34240: $? = 0
 configure:34242: result: yes
 configure:34256: checking if getservbyport_r is compilable
@@ -14452,13 +14448,13 @@ configure:34335: result: yes
 configure:34335: checking for time.h
 configure:34335: result: yes
 configure:34355: checking if gmtime_r can be linked
-configure:34384: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:34384: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:34384: $? = 0
 configure:34386: result: yes
 configure:34401: checking if gmtime_r is prototyped
 configure:34412: result: yes
 configure:34428: checking if gmtime_r is compilable
-configure:34447: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:34447: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:34447: $? = 0
 configure:34449: result: yes
 configure:34523: checking if gmtime_r usage allowed
@@ -14474,8 +14470,8 @@ configure:34580: result: yes
 configure:34580: checking for arpa/inet.h
 configure:34580: result: yes
 configure:34600: checking if inet_ntoa_r can be linked
-configure:34629: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccELeEXn.o: In function `main':
+configure:34629: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/cc4oaS8Z.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `inet_ntoa_r'
 collect2: ld returned 1 exit status
 configure:34629: $? = 1
@@ -14711,13 +14707,13 @@ configure:34637: result: no
 configure:34772: checking if inet_ntoa_r might be used
 configure:34798: result: no
 configure:34811: checking if inet_ntop can be linked
-configure:34840: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:34840: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:34840: $? = 0
 configure:34842: result: yes
 configure:34857: checking if inet_ntop is prototyped
 configure:34868: result: yes
 configure:34884: checking if inet_ntop is compilable
-configure:34903: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:34903: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:34903: $? = 0
 configure:34905: result: yes
 configure:35021: checking if inet_ntop usage allowed
@@ -14725,13 +14721,13 @@ configure:35024: result: yes
 configure:35034: checking if inet_ntop might be used
 configure:35041: result: yes
 configure:35063: checking if inet_pton can be linked
-configure:35092: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:35092: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:35092: $? = 0
 configure:35094: result: yes
 configure:35109: checking if inet_pton is prototyped
 configure:35120: result: yes
 configure:35136: checking if inet_pton is compilable
-configure:35155: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:35155: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:35155: $? = 0
 configure:35157: result: yes
 configure:35266: checking if inet_pton usage allowed
@@ -14747,17 +14743,17 @@ configure:35322: result: yes
 configure:35322: checking for sys/ioctl.h
 configure:35322: result: yes
 configure:35322: checking for stropts.h
-configure:35322: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:35322: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:35322: $? = 0
 configure:35322: result: yes
 configure:35341: checking if ioctl can be linked
-configure:35370: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:35370: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:35370: $? = 0
 configure:35372: result: yes
 configure:35387: checking if ioctl is prototyped
 configure:35398: result: yes
 configure:35414: checking if ioctl is compilable
-configure:35433: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:35433: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:35433: $? = 0
 configure:35435: result: yes
 configure:35450: checking if ioctl usage allowed
@@ -14765,7 +14761,7 @@ configure:35453: result: yes
 configure:35463: checking if ioctl might be used
 configure:35469: result: yes
 configure:35483: checking if ioctl FIONBIO is compilable
-configure:35503: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:35503: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:35503: $? = 0
 configure:35505: result: yes
 configure:35520: checking if ioctl FIONBIO usage allowed
@@ -14773,7 +14769,7 @@ configure:35523: result: yes
 configure:35533: checking if ioctl FIONBIO might be used
 configure:35537: result: yes
 configure:35557: checking if ioctl SIOCGIFADDR is compilable
-configure:35578: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:35578: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:35578: $? = 0
 configure:35580: result: yes
 configure:35595: checking if ioctl SIOCGIFADDR usage allowed
@@ -14781,7 +14777,7 @@ configure:35598: result: yes
 configure:35608: checking if ioctl SIOCGIFADDR might be used
 configure:35612: result: yes
 configure:35639: checking if ioctlsocket can be linked
-configure:35658: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:35658: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:235: error: implicit declaration of function 'ioctlsocket'
 configure:35658: $? = 1
@@ -15031,8 +15027,8 @@ configure:35666: result: no
 configure:35751: checking if ioctlsocket might be used
 configure:35840: result: no
 configure:35852: checking if IoctlSocket can be linked
-configure:35881: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccCIBEjq.o: In function `main':
+configure:35881: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/ccoH2pci.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `IoctlSocket'
 collect2: ld returned 1 exit status
 configure:35881: $? = 1
@@ -15278,13 +15274,13 @@ configure:35889: result: no
 configure:35974: checking if IoctlSocket might be used
 configure:36063: result: no
 configure:36076: checking if localtime_r can be linked
-configure:36105: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:36105: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:36105: $? = 0
 configure:36107: result: yes
 configure:36122: checking if localtime_r is prototyped
 configure:36133: result: yes
 configure:36149: checking if localtime_r is compilable
-configure:36168: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:36168: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:36168: $? = 0
 configure:36170: result: yes
 configure:36244: checking if localtime_r usage allowed
@@ -15292,7 +15288,7 @@ configure:36247: result: yes
 configure:36257: checking if localtime_r might be used
 configure:36264: result: yes
 configure:36286: checking if memrchr can be linked
-configure:36315: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:36315: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:36315: $? = 0
 configure:36317: result: yes
 configure:36369: checking if memrchr is prototyped
@@ -15300,13 +15296,13 @@ configure:36386: result: no
 configure:36446: checking if memrchr might be used
 configure:36461: result: no
 configure:36481: checking if poll can be linked
-configure:36500: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:36500: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:36500: $? = 0
 configure:36502: result: yes
 configure:36517: checking if poll is prototyped
 configure:36528: result: yes
 configure:36544: checking if poll is compilable
-configure:36563: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:36563: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:36563: $? = 0
 configure:36565: result: yes
 configure:36651: checking if poll usage allowed
@@ -15314,13 +15310,13 @@ configure:36654: result: yes
 configure:36664: checking if poll might be used
 configure:36671: result: yes
 configure:36697: checking if setsockopt can be linked
-configure:36717: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:36717: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:36717: $? = 0
 configure:36719: result: yes
 configure:36734: checking if setsockopt is prototyped
 configure:36746: result: yes
 configure:36762: checking if setsockopt is compilable
-configure:36782: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:36782: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:36782: $? = 0
 configure:36784: result: yes
 configure:36799: checking if setsockopt usage allowed
@@ -15328,7 +15324,7 @@ configure:36802: result: yes
 configure:36812: checking if setsockopt might be used
 configure:36818: result: yes
 configure:36832: checking if setsockopt SO_NONBLOCK is compilable
-configure:36852: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:36852: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:247: error: 'SO_NONBLOCK' undeclared (first use in this function)
 conftest.c:247: error: (Each undeclared identifier is reported only once
@@ -15596,13 +15592,13 @@ configure:36919: result: yes
 configure:36919: checking for signal.h
 configure:36919: result: yes
 configure:36938: checking if sigaction can be linked
-configure:36967: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:36967: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:36967: $? = 0
 configure:36969: result: yes
 configure:36984: checking if sigaction is prototyped
 configure:36995: result: yes
 configure:37011: checking if sigaction is compilable
-configure:37030: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:37030: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:37030: $? = 0
 configure:37032: result: yes
 configure:37047: checking if sigaction usage allowed
@@ -15610,13 +15606,13 @@ configure:37050: result: yes
 configure:37060: checking if sigaction might be used
 configure:37066: result: yes
 configure:37087: checking if siginterrupt can be linked
-configure:37116: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:37116: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:37116: $? = 0
 configure:37118: result: yes
 configure:37133: checking if siginterrupt is prototyped
 configure:37144: result: yes
 configure:37160: checking if siginterrupt is compilable
-configure:37179: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:37179: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:37179: $? = 0
 configure:37181: result: yes
 configure:37196: checking if siginterrupt usage allowed
@@ -15624,13 +15620,13 @@ configure:37199: result: yes
 configure:37209: checking if siginterrupt might be used
 configure:37215: result: yes
 configure:37236: checking if signal can be linked
-configure:37265: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:37265: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:37265: $? = 0
 configure:37267: result: yes
 configure:37282: checking if signal is prototyped
 configure:37293: result: yes
 configure:37309: checking if signal is compilable
-configure:37328: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:37328: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:37328: $? = 0
 configure:37330: result: yes
 configure:37345: checking if signal usage allowed
@@ -15642,8 +15638,8 @@ configure:37391: result: yes
 configure:37391: checking for setjmp.h
 configure:37391: result: yes
 configure:37411: checking if sigsetjmp can be linked
-configure:37440: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/cc4iMG2i.o: In function `main':
+configure:37440: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/ccWGvJ2q.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `sigsetjmp'
 collect2: ld returned 1 exit status
 configure:37440: $? = 1
@@ -15898,11 +15894,11 @@ configure: failed program was:
 | 
 configure:37448: result: no
 configure:37457: checking if sigsetjmp seems a macro
-configure:37477: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:37477: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:37477: $? = 0
 configure:37479: result: yes
 configure:37523: checking if sigsetjmp is compilable
-configure:37543: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:37543: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:37543: $? = 0
 configure:37545: result: yes
 configure:37560: checking if sigsetjmp usage allowed
@@ -15910,13 +15906,13 @@ configure:37563: result: yes
 configure:37573: checking if sigsetjmp might be used
 configure:37579: result: yes
 configure:37600: checking if socket can be linked
-configure:37621: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:37621: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:37621: $? = 0
 configure:37623: result: yes
 configure:37638: checking if socket is prototyped
 configure:37651: result: yes
 configure:37667: checking if socket is compilable
-configure:37688: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:37688: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:37688: $? = 0
 configure:37690: result: yes
 configure:37705: checking if socket usage allowed
@@ -15924,13 +15920,13 @@ configure:37708: result: yes
 configure:37718: checking if socket might be used
 configure:37724: result: yes
 configure:37745: checking if socketpair can be linked
-configure:37774: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:37774: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:37774: $? = 0
 configure:37776: result: yes
 configure:37791: checking if socketpair is prototyped
 configure:37803: result: yes
 configure:37819: checking if socketpair is compilable
-configure:37840: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:37840: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:37840: $? = 0
 configure:37842: result: yes
 configure:37857: checking if socketpair usage allowed
@@ -15938,14 +15934,14 @@ configure:37860: result: yes
 configure:37870: checking if socketpair might be used
 configure:37876: result: yes
 configure:37897: checking if strcasecmp can be linked
-configure:37926: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:37926: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 conftest.c:240: warning: conflicting types for built-in function 'strcasecmp'
 configure:37926: $? = 0
 configure:37928: result: yes
 configure:37943: checking if strcasecmp is prototyped
 configure:37954: result: yes
 configure:37970: checking if strcasecmp is compilable
-configure:37989: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:37989: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:37989: $? = 0
 configure:37991: result: yes
 configure:38006: checking if strcasecmp usage allowed
@@ -15953,8 +15949,8 @@ configure:38009: result: yes
 configure:38019: checking if strcasecmp might be used
 configure:38025: result: yes
 configure:38046: checking if strcmpi can be linked
-configure:38075: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/cciVCAN8.o: In function `main':
+configure:38075: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/ccmhIQii.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `strcmpi'
 collect2: ld returned 1 exit status
 configure:38075: $? = 1
@@ -16215,14 +16211,14 @@ configure:38083: result: no
 configure:38168: checking if strcmpi might be used
 configure:38183: result: no
 configure:38195: checking if strdup can be linked
-configure:38224: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:38224: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 conftest.c:241: warning: conflicting types for built-in function 'strdup'
 configure:38224: $? = 0
 configure:38226: result: yes
 configure:38241: checking if strdup is prototyped
 configure:38252: result: yes
 configure:38268: checking if strdup is compilable
-configure:38287: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:38287: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:38287: $? = 0
 configure:38289: result: yes
 configure:38304: checking if strdup usage allowed
@@ -16230,17 +16226,17 @@ configure:38307: result: yes
 configure:38317: checking if strdup might be used
 configure:38323: result: yes
 configure:38350: checking if strerror_r can be linked
-configure:38379: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:38379: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:38379: $? = 0
 configure:38381: result: yes
 configure:38396: checking if strerror_r is prototyped
 configure:38407: result: yes
 configure:38423: checking if strerror_r is compilable
-configure:38442: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:38442: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:38442: $? = 0
 configure:38444: result: yes
 configure:38459: checking if strerror_r is glibc like
-configure:38482: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:38482: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:243: error: conflicting types for 'strerror_r'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h:425: note: previous declaration of 'strerror_r' was here
 configure:38482: $? = 1
@@ -16499,7 +16495,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:38482: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:38482: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:243: error: conflicting types for 'strerror_r'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h:425: note: previous declaration of 'strerror_r' was here
 configure:38482: $? = 1
@@ -16758,7 +16754,7 @@ configure: failed program was:
 |  return 0;
 | }
 | 
-configure:38482: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:38482: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 conftest.c:243: error: conflicting types for 'strerror_r'
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h:425: note: previous declaration of 'strerror_r' was here
 configure:38482: $? = 1
@@ -17019,7 +17015,7 @@ configure: failed program was:
 | 
 configure:38492: result: no
 configure:38567: checking if strerror_r is POSIX like
-configure:38590: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:38590: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:38590: $? = 0
 configure:38605: result: yes
 configure:38690: checking if strerror_r usage allowed
@@ -17027,8 +17023,8 @@ configure:38693: result: yes
 configure:38703: checking if strerror_r might be used
 configure:38709: result: yes
 configure:38766: checking if stricmp can be linked
-configure:38795: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccy9lIF5.o: In function `main':
+configure:38795: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/ccuwKB0s.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `stricmp'
 collect2: ld returned 1 exit status
 configure:38795: $? = 1
@@ -17293,14 +17289,14 @@ configure:38803: result: no
 configure:38888: checking if stricmp might be used
 configure:38903: result: no
 configure:38915: checking if strncasecmp can be linked
-configure:38944: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:38944: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 conftest.c:245: warning: conflicting types for built-in function 'strncasecmp'
 configure:38944: $? = 0
 configure:38946: result: yes
 configure:38961: checking if strncasecmp is prototyped
 configure:38972: result: yes
 configure:38988: checking if strncasecmp is compilable
-configure:39007: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:39007: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:39007: $? = 0
 configure:39009: result: yes
 configure:39024: checking if strncasecmp usage allowed
@@ -17308,8 +17304,8 @@ configure:39027: result: yes
 configure:39037: checking if strncasecmp might be used
 configure:39043: result: yes
 configure:39064: checking if strncmpi can be linked
-configure:39093: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccQIOfye.o: In function `main':
+configure:39093: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/ccW9Niq4.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `strncmpi'
 collect2: ld returned 1 exit status
 configure:39093: $? = 1
@@ -17575,8 +17571,8 @@ configure:39101: result: no
 configure:39186: checking if strncmpi might be used
 configure:39201: result: no
 configure:39213: checking if strnicmp can be linked
-configure:39242: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/cckOYeNr.o: In function `main':
+configure:39242: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/ccGuNobS.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `strnicmp'
 collect2: ld returned 1 exit status
 configure:39242: $? = 1
@@ -17842,14 +17838,14 @@ configure:39250: result: no
 configure:39335: checking if strnicmp might be used
 configure:39350: result: no
 configure:39362: checking if strstr can be linked
-configure:39391: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:39391: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 conftest.c:246: warning: conflicting types for built-in function 'strstr'
 configure:39391: $? = 0
 configure:39393: result: yes
 configure:39408: checking if strstr is prototyped
 configure:39419: result: yes
 configure:39435: checking if strstr is compilable
-configure:39454: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:39454: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:39454: $? = 0
 configure:39456: result: yes
 configure:39471: checking if strstr usage allowed
@@ -17857,13 +17853,13 @@ configure:39474: result: yes
 configure:39484: checking if strstr might be used
 configure:39490: result: yes
 configure:39511: checking if strtok_r can be linked
-configure:39540: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:39540: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:39540: $? = 0
 configure:39542: result: yes
 configure:39557: checking if strtok_r is prototyped
 configure:39568: result: yes
 configure:39584: checking if strtok_r is compilable
-configure:39603: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:39603: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:39603: $? = 0
 configure:39605: result: yes
 configure:39620: checking if strtok_r usage allowed
@@ -17871,13 +17867,13 @@ configure:39623: result: yes
 configure:39633: checking if strtok_r might be used
 configure:39639: result: yes
 configure:39660: checking if strtoll can be linked
-configure:39689: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:39689: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:39689: $? = 0
 configure:39691: result: yes
 configure:39706: checking if strtoll is prototyped
 configure:39717: result: yes
 configure:39733: checking if strtoll is compilable
-configure:39752: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:39752: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:39752: $? = 0
 configure:39754: result: yes
 configure:39769: checking if strtoll usage allowed
@@ -17889,13 +17885,13 @@ configure:39815: result: yes
 configure:39815: checking for sys/uio.h
 configure:39815: result: yes
 configure:39834: checking if writev can be linked
-configure:39863: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:39863: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:39863: $? = 0
 configure:39865: result: yes
 configure:39880: checking if writev is prototyped
 configure:39891: result: yes
 configure:39907: checking if writev is compilable
-configure:39926: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:39926: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:39926: $? = 0
 configure:39928: result: yes
 configure:39943: checking if writev usage allowed
@@ -17903,20 +17899,20 @@ configure:39946: result: yes
 configure:39956: checking if writev might be used
 configure:39962: result: yes
 configure:39986: checking whether getpwuid_r is declared
-configure:39986: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:39986: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:39986: $? = 0
 configure:39986: result: yes
 configure:40027: checking for fnmatch
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for geteuid
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for getpass_r
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccCUK100.o: In function `main':
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/ccgDB3Oo.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `getpass_r'
 collect2: ld returned 1 exit status
 configure:40027: $? = 1
@@ -18187,7 +18183,7 @@ configure: failed program was:
 | }
 configure:40027: result: no
 configure:40039: checking deeper for getpass_r
-configure:40056: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40056: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:249: error: implicit declaration of function 'getpass_r'
 configure:40056: $? = 1
@@ -18448,32 +18444,32 @@ configure: failed program was:
 | 
 configure:40069: result: but still no
 configure:40027: checking for getppid
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for getpwuid
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for getpwuid_r
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for getrlimit
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for gettimeofday
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for if_nametoindex
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for mach_absolute_time
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/cc8MXLyS.o: In function `main':
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/ccWTRP4p.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `mach_absolute_time'
 collect2: ld returned 1 exit status
 configure:40027: $? = 1
@@ -18750,7 +18746,7 @@ configure: failed program was:
 | }
 configure:40027: result: no
 configure:40039: checking deeper for mach_absolute_time
-configure:40056: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40056: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:255: error: implicit declaration of function 'mach_absolute_time'
 configure:40056: $? = 1
@@ -19017,16 +19013,16 @@ configure: failed program was:
 | 
 configure:40069: result: but still no
 configure:40027: checking for pipe
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for setlocale
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for setmode
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/cccW1W8t.o: In function `main':
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
+/tmp/cccfsAdQ.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `setmode'
 collect2: ld returned 1 exit status
 configure:40027: $? = 1
@@ -19305,7 +19301,7 @@ configure: failed program was:
 | }
 configure:40027: result: no
 configure:40039: checking deeper for setmode
-configure:40056: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40056: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 conftest.c: In function 'main':
 conftest.c:257: error: implicit declaration of function 'setmode'
 configure:40056: $? = 1
@@ -19574,15 +19570,15 @@ configure: failed program was:
 | 
 configure:40069: result: but still no
 configure:40027: checking for setrlimit
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for utime
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for utimes
-configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40027: $? = 0
 configure:40027: result: yes
 configure:40095: checking how to set a socket into non-blocking mode
@@ -19602,17 +19598,17 @@ configure:40687: result: yes
 configure:40692: checking whether to use POSIX threads for threaded resolver
 configure:40708: result: auto
 configure:40734: checking pthread.h usability
-configure:40734: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:40734: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:40734: $? = 0
 configure:40734: result: yes
 configure:40734: checking pthread.h presence
-configure:40734: arm-none-linux-gnueabi-gcc -E   conftest.c
+configure:40734: arm-none-linux-gnueabi-gcc -E    conftest.c
 configure:40734: $? = 0
 configure:40734: result: yes
 configure:40734: checking for pthread.h
 configure:40734: result: yes
 configure:40741: checking for pthread_create
-configure:40741: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
+configure:40741: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers       conftest.c -lssl -lcrypto -lz -lrt >&5
 configure:40741: $? = 0
 configure:40741: result: yes
 configure:40827: checking whether to enable verbose strings
@@ -19628,7 +19624,7 @@ configure:40987: result: yes
 configure:41002: checking whether to enable Unix domain sockets
 configure:41018: result: auto
 configure:41026: checking for struct sockaddr_un.sun_path
-configure:41026: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c >&5
+configure:41026: arm-none-linux-gnueabi-gcc -c -Werror-implicit-function-declaration -O2 -Wno-system-headers    conftest.c >&5
 configure:41026: $? = 0
 configure:41026: result: yes
 configure:41049: checking whether to enable support for cookies
@@ -19865,7 +19861,6 @@ ac_cv_lib_crypto_HMAC_Update=yes
 ac_cv_lib_crypto_SRP_Calc_client_key=yes
 ac_cv_lib_rtmp_RTMP_Init=no
 ac_cv_lib_ssl_SSL_connect=yes
-ac_cv_lib_z_inflateEnd=yes
 ac_cv_member_struct_sockaddr_un_sun_path=yes
 ac_cv_objext=o
 ac_cv_path_EGREP='/bin/grep -E'

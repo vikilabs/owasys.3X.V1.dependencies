@@ -154,7 +154,7 @@ sudo cp -r ../../unstripped_bin_new/curl ../../stripped_bin_new/
 sudo cp -r ../../unstripped_lib_new/libcurl.so* ../../stripped_lib_new/
 
 cd ../../stripped_bin_new/
-sudo arm-none-linux-gnueabi-strip curl
+sudo /opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-strip curl
 
 if [ $? -eq 0 ]; then
     echo "[ success ] curl binary stripped successfully"
