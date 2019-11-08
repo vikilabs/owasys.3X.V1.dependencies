@@ -93,6 +93,10 @@ libcurl_la-http_ntlm.lo: http_ntlm.c curl_setup.h curl_config.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/opensslv.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ossl_typ.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/symhacks.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/pthread.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sched.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sched.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/signal.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/bio.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/x509.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/buffer.h \
@@ -102,8 +106,6 @@ libcurl_la-http_ntlm.lo: http_ntlm.c curl_setup.h curl_config.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/asn1.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/bn.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ec.h \
- /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ecdsa.h \
- /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ecdh.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/rsa.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/dsa.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/dh.h \
@@ -114,13 +116,12 @@ libcurl_la-http_ntlm.lo: http_ntlm.c curl_setup.h curl_config.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/pem.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/pem2.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/hmac.h \
- /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/kssl.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/async.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ct.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ssl2.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ssl3.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/tls1.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/dtls1.h \
- /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/pqueue.h \
- /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ssl23.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/srtp.h \
  curl_ntlm_wb.h vauth/vauth.h url.h curl_printf.h \
  ../include/curl/mprintf.h curl_memory.h memdebug.h
@@ -377,6 +378,14 @@ curl_ntlm_core.h:
 
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/symhacks.h:
 
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/pthread.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/sched.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sched.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/signal.h:
+
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/bio.h:
 
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/x509.h:
@@ -394,10 +403,6 @@ curl_ntlm_core.h:
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/bn.h:
 
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ec.h:
-
-/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ecdsa.h:
-
-/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ecdh.h:
 
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/rsa.h:
 
@@ -419,7 +424,9 @@ curl_ntlm_core.h:
 
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/hmac.h:
 
-/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/kssl.h:
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/async.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ct.h:
 
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ssl2.h:
 
@@ -428,10 +435,6 @@ curl_ntlm_core.h:
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/tls1.h:
 
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/dtls1.h:
-
-/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/pqueue.h:
-
-/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/ssl23.h:
 
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/srtp.h:
 

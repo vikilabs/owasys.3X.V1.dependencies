@@ -69,8 +69,10 @@ libcurl_la-md5.lo: md5.c curl_setup.h curl_config.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h \
  curl_ctype.h curl_md5.h curl_hmac.h warnless.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/md5.h \
- /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/e_os2.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/opensslconf.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/e_os2.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/stdint.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wchar.h \
  curl_memory.h memdebug.h
 
 curl_setup.h:
@@ -231,9 +233,13 @@ warnless.h:
 
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/md5.h:
 
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/opensslconf.h:
+
 /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/e_os2.h:
 
-/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/openssl/opensslconf.h:
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/stdint.h:
+
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wchar.h:
 
 curl_memory.h:
 

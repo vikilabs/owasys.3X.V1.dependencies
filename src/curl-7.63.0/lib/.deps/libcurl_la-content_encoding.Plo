@@ -82,8 +82,9 @@ libcurl_la-content_encoding.lo: content_encoding.c curl_setup.h \
  /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/setjmp.h \
  splay.h mime.h imap.h pingpong.h curl_sasl.h pop3.h smtp.h ftp.h file.h \
  ssh.h http.h rtsp.h smb.h wildcard.h multihandle.h conncache.h \
- /usr/local/include/zlib.h /usr/local/include/zconf.h sendf.h \
- content_encoding.h strdup.h strcase.h curl_memory.h memdebug.h
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/zlib.h \
+ /opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/zconf.h \
+ sendf.h content_encoding.h strdup.h strcase.h curl_memory.h memdebug.h
 
 curl_setup.h:
 
@@ -309,9 +310,9 @@ multihandle.h:
 
 conncache.h:
 
-/usr/local/include/zlib.h:
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/zlib.h:
 
-/usr/local/include/zconf.h:
+/opt/crosstool/arm-none-linux-gnueabi/bin/../arm-none-linux-gnueabi/libc/usr/include/zconf.h:
 
 sendf.h:
 

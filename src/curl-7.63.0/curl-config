@@ -21,7 +21,7 @@
 #
 ###########################################################################
 
-prefix=/home/viki/curl-for-owa3x
+prefix=/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr
 exec_prefix=${prefix}
 includedir=${prefix}/include
 cppflag_curl_staticlib=
@@ -172,7 +172,7 @@ while test $# -gt 0; do
 
     --static-libs)
         if test "Xyes" != "Xno" ; then
-          echo ${exec_prefix}/lib/libcurl.a -L/usr/local/lib -lssl -lcrypto -lz -lrt
+          echo ${exec_prefix}/lib/libcurl.a  -lssl -lcrypto -lz -lrt
         else
           echo "curl was built with static libraries disabled" >&2
           exit 1
@@ -180,7 +180,7 @@ while test $# -gt 0; do
         ;;
 
     --configure)
-        echo " '--prefix=/home/viki/curl-for-owa3x/' '--target=arm-none-linux-gnueabi' '--host=arm-none-linux-gnueabi' '--build=i586-pc-linux-gnu' '--enable-threaded-resolver' '--with-ca-fallback' '--disable-gopher' '--without-winssl' '--without-darwinssl' '--disable-manual' 'build_alias=i586-pc-linux-gnu' 'host_alias=arm-none-linux-gnueabi' 'target_alias=arm-none-linux-gnueabi' 'CC=arm-none-linux-gnueabi-gcc'"
+        echo " '--prefix=/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr' '--target=arm-none-linux-gnueabi' '--host=arm-none-linux-gnueabi' '--build=i586-pc-linux-gnu' '--enable-threaded-resolver' '--with-ca-fallback' '--disable-gopher' '--without-winssl' '--without-darwinssl' '--disable-manual' 'build_alias=i586-pc-linux-gnu' 'host_alias=arm-none-linux-gnueabi' 'target_alias=arm-none-linux-gnueabi' 'CC=arm-none-linux-gnueabi-gcc'"
         ;;
 
     *)

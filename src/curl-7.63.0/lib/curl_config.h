@@ -531,7 +531,7 @@
 #define HAVE_PWD_H 1
 
 /* Define to 1 if you have the `RAND_egd' function. */
-#define HAVE_RAND_EGD 1
+/* #undef HAVE_RAND_EGD */
 
 /* Define to 1 if you have the recv function. */
 #define HAVE_RECV 1
@@ -600,7 +600,7 @@
 /* #undef HAVE_SOCKET_H */
 
 /* Define to 1 if you have the `SSLv2_client_method' function. */
-#define HAVE_SSLV2_CLIENT_METHOD 1
+/* #undef HAVE_SSLV2_CLIENT_METHOD */
 
 /* Define to 1 if you have the `SSL_get_shutdown' function. */
 #define HAVE_SSL_GET_SHUTDOWN 1

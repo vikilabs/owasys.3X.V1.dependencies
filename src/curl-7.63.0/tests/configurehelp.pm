@@ -18,6 +18,6 @@ use vars qw(
     $Cpreprocessor
     );
 
-$Cpreprocessor = 'arm-none-linux-gnueabi-gcc -E -I/usr/local/include';
+$Cpreprocessor = 'arm-none-linux-gnueabi-gcc -E';
 
 1;

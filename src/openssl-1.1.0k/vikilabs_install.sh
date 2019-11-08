@@ -121,7 +121,7 @@ else
     exit 1
 fi
 
-echo "[ Checking Library ] libz.so"
+echo "[ Checking Library ] libssl.so"
 
 ls /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libssl.so
 
@@ -133,4 +133,25 @@ else
     echo "[ failure ] OpenSSL installation failed"
     exit 1
 fi
+
+mkdir ../../stripped_lib_new
+mkdir ../../unstripped_lib_new
+
+cp /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libssl.so* ../../unstripped_lib_new/
+
+cp ../../unstripped_lib_new/libssl.so* ../../stripped_lib_new/
+
+cd ../../stripped_lib_new/
+arm-none-linux-gnueabi-strip libssl.so.1.1
+
+if [ $? -eq 0 ]; then
+    echo "[ success ] libssl stripped successfully"
+else
+    echo "[ failure ] unable to strip  libssl"
+    exit 1
+fi
+
+ls -l libssl.so*
+ls -l ../unstripped_lib_new/libssl.so*
+
 
