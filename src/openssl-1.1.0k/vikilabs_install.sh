@@ -142,7 +142,7 @@ sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr
 sudo cp -r ../../unstripped_lib_new/libssl.so* ../../stripped_lib_new/
 
 cd ../../stripped_lib_new/
-sudo arm-none-linux-gnueabi-strip libssl.so.1.1
+sudo /opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-strip libssl.so.1.1
 
 if [ $? -eq 0 ]; then
     echo "[ success ] libssl stripped successfully"

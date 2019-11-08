@@ -118,7 +118,7 @@ sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/lib
 sudo cp -r ../../unstripped_lib_new/libmosquitto.so* ../../stripped_lib_new/
 
 cd ../../stripped_lib_new/
-sudo arm-none-linux-gnueabi-strip libmosquitto.so.1
+sudo /opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-strip libmosquitto.so.1
 
 ls
 

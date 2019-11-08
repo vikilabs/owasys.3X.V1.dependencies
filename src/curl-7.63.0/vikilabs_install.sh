@@ -169,7 +169,7 @@ ls -l ../unstripped_bin_new/curl
 
 
 cd  ../stripped_lib_new/
-sudo arm-none-linux-gnueabi-strip libcurl.so.4.5.0
+sudo /opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-strip libcurl.so.4.5.0
 
 if [ $? -eq 0 ]; then
     echo "[ success ] libcurl stripped successfully"
