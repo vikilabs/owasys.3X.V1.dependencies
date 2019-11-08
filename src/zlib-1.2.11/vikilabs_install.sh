@@ -66,6 +66,15 @@ else
     exit 1
 fi
 
+make clean
+
+if [ $? -eq 0 ]; then
+    echo "[ success ] Make Clean"
+else
+    echo "[ failure ] Make Clean"
+    exit 1
+fi
+
 
 
 #Relink Compilation Parameter for Intel
@@ -113,5 +122,4 @@ else
     echo "[ failure ] zlib installation failed"
     exit 1
 fi
-
 
