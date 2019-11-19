@@ -53,6 +53,17 @@ else
     exit 1
 fi
 
+make install
+
+if [ $? -eq 0 ]; then
+    echo "[ success ] make install"
+else
+    echo "[ failure ] make install"
+    exit 1
+fi
+
+
+
 make clean
 
 if [ $? -eq 0 ]; then
@@ -99,7 +110,7 @@ fi
 
 echo "[ Checking Library ] libmosquitto.so"
 
-ls /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/lib/libmosquitto.so
+ls /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libmosquitto.so
 
 if [ $? -eq 0 ]; then
     echo "[ success ] libmosquitto.so exist"

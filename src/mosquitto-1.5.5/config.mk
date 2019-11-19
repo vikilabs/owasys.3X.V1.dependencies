@@ -281,7 +281,7 @@ ifeq ($(WITH_WEBSOCKETS),static)
 endif
 
 INSTALL?=install
-prefix?=/usr/local
+prefix?=/opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr
 incdir?=${prefix}/include
 libdir?=${prefix}/lib${LIB_SUFFIX}
 localedir?=${prefix}/share/locale
