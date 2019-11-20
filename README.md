@@ -11,6 +11,10 @@
 	- libcrypto.so
 	- libz.so
 	- libcurl.so
+
+## Binaries / Utility programs
+	- curl
+	- scp
  
 ## Installing Libraries in Owasys OWA 3X device
 	
@@ -43,6 +47,9 @@
 	- cd src/curl-7.63.0
 	- sudo ./vikilabs_install.sh     #Compile and Install CURL Libraries for OWASYS ( On Ubuntu )
 
+	- cd src/dropbear_openssh
+	- sudo ./vikilabs_install.sh 	#Compile dropbear ssh binaries
+
 ## Note:
 	
 	1. Converting unstripped library(binary) to stripped library(binary)
@@ -61,6 +68,25 @@
 		
 		- /lib
 
- 
+	5. On OWASYS Device copy the binaries to 
+
+		- mkdir /home/bin 
+		- cd /home/bin
+
+
+
+##### Dropbear ssh installation
+	
+	- Copy all binaries under stripped_bins/*  to OWASYS Device /home/bin directory
+	- Copy all libraries under stripped_libs/* to OWASYS Device /lib directory
+	- Copy owasys_device_scripts/dropbear_ssh_server_setup.sh  to OWASYS Device /home/scrips directory
+	- On OWA Device
+	- /home/scripts/dropbear_ssh_server_setup.sh
+	- #system will reboot and ssh should be running
+
+
+#### Mote
+
+	1. All Device startup scripts are located at "/home/userinit.sh"
 
 
