@@ -1,21 +1,30 @@
 echo "Donot copy libraries to /lib directory, create a softlink instead to save space at /root directory"
 
-ln -s stripped_libs/libcrypto.so.1.1    /lib/libcrypto.so.1.1
-ln -s stripped_libs/libcrypto.so.1.1    /lib/libcrypto.so 
+SYSTEM_LIB="/lib"
+USER_LIB="/home/stripped_libs"
 
-ln -s stripped_libs/libcurl.so.4.5.0    /lib/libcurl.so.4.5.0
-ln -s stripped_libs/libcurl.so.4.5.0    /lib/libcurl.so.4
-ln -s stripped_libs/libcurl.so.4.5.0    /lib/libcurl.so
+rm -rf  $SYSTEM_LIB/libcrypto.so* 
+rm -rf  $SYSTEM_LIB/libcurl.so*
+rm -rf  $SYSTEM_LIB/libmosquitto.so*
+rm -rf  $SYSTEM_LIB/libssl.so* 
+rm -rf  $SYSTEM_LIB/libz.so* 
 
-ln -s stripped_libs/libmosquitto.so.1   /lib/libmosquitto.so.1
-ln -s stripped_libs/libmosquitto.so.1   /lib/libmosquitto.so
+ln -s $USER_LIB/libcrypto.so.1.1    $SYSTEM_LIB/libcrypto.so.1.1
+ln -s $USER_LIB/libcrypto.so.1.1    $SYSTEM_LIB/libcrypto.so 
 
-ln -s stripped_libs/libssl.so.1.1       /lib/libssl.so.1.1
-ln -s stripped_libs/libssl.so.1.1       /lib/libssl.so
+ln -s $USER_LIB/libcurl.so.4.5.0    $SYSTEM_LIB/libcurl.so.4.5.0
+ln -s $USER_LIB/libcurl.so.4.5.0    $SYSTEM_LIB/libcurl.so.4
+ln -s $USER_LIB/libcurl.so.4.5.0    $SYSTEM_LIB/libcurl.so
 
-ln -s stripped_libs/libz.so.1.2.11      /lib/libz.so.1.2.11
-ln -s stripped_libs/libz.so.1.2.11      /lib/libz.so.1
-ln -s stripped_libs/libz.so.1.2.11      /lib/libz.so
+ln -s $USER_LIB/libmosquitto.so.1   $SYSTEM_LIB/libmosquitto.so.1
+ln -s $USER_LIB/libmosquitto.so.1   $SYSTEM_LIB/libmosquitto.so
+
+ln -s $USER_LIB/libssl.so.1.1       $SYSTEM_LIB/libssl.so.1.1
+ln -s $USER_LIB/libssl.so.1.1       $SYSTEM_LIB/libssl.so
+
+ln -s $USER_LIB/libz.so.1.2.11      $SYSTEM_LIB/libz.so.1.2.11
+ln -s $USER_LIB/libz.so.1.2.11      $SYSTEM_LIB/libz.so.1
+ln -s $USER_LIB/libz.so.1.2.11      $SYSTEM_LIB/libz.so
 
 
 
