@@ -125,14 +125,14 @@ else
     exit 1
 fi
 
-mkdir ../../stripped_lib_new
-mkdir ../../unstripped_lib_new
+mkdir ../../stripped_libs_new
+mkdir ../../unstripped_libs_new
 
-sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libz.so* ../../unstripped_lib_new/
+sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libz.so* ../../unstripped_libs_new/
 
-sudo cp -r ../../unstripped_lib_new/libz.so* ../../stripped_lib_new/
+sudo cp -r ../../unstripped_libs_new/libz.so* ../../stripped_libs_new/
 
-cd ../../stripped_lib_new/
+cd ../../stripped_libs_new/
 sudo /opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-strip libz.so.1.2.11
 
 if [ $? -eq 0 ]; then
@@ -148,6 +148,6 @@ sudo ln -s libz.so.1.2.11 libz.so
 sudo ln -s libz.so.1.2.11 libz.so.1
 
 ls -l libz.so*
-ls -l ../unstripped_lib_new/libz.so*
+ls -l ../unstripped_libs_new/libz.so*
 
 

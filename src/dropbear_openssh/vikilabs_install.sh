@@ -99,15 +99,15 @@ else
     exit 1
 fi
 
-mkdir ../../stripped_bin_new 2>/dev/null
-mkdir ../../unstripped_bin_new 2>/dev/null
+mkdir ../../stripped_bins_new 2>/dev/null
+mkdir ../../unstripped_bins_new 2>/dev/null
 
 
-cp dropbear ../../unstripped_bin_new/ 
-cp dropbearconvert ../../unstripped_bin_new/
-cp dropbearkey ../../unstripped_bin_new/
-cp dbclient ../../unstripped_bin_new/
-cp scp ../../unstripped_bin_new/
+cp dropbear ../../unstripped_bins_new/ 
+cp dropbearconvert ../../unstripped_bins_new/
+cp dropbearkey ../../unstripped_bins_new/
+cp dbclient ../../unstripped_bins_new/
+cp scp ../../unstripped_bins_new/
 
 
 echo "[ Stripping Binaries ]"
@@ -121,9 +121,9 @@ else
     exit 1
 fi
 
-cp dropbear ../../stripped_bin_new/ 
-cp dropbearconvert ../../stripped_bin_new/
-cp dropbearkey ../../stripped_bin_new/
-cp dbclient ../../stripped_bin_new/
-cp scp ../../stripped_bin_new/
+cp dropbear ../../stripped_bins_new/ 
+cp dropbearconvert ../../stripped_bins_new/
+cp dropbearkey ../../stripped_bins_new/
+cp dbclient ../../stripped_bins_new/
+cp scp ../../stripped_bins_new/
 

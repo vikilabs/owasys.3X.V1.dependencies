@@ -142,18 +142,18 @@ else
     exit 1
 fi
 
-mkdir ../../stripped_bin_new
-mkdir ../../stripped_lib_new
-mkdir ../../unstripped_bin_new
-mkdir ../../unstripped_lib_new
+mkdir ../../stripped_bins_new
+mkdir ../../stripped_libs_new
+mkdir ../../unstripped_bins_new
+mkdir ../../unstripped_libs_new
 
-sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/bin/curl ../../unstripped_bin_new/
-sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libcurl.so* ../../unstripped_lib_new/
+sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/bin/curl ../../unstripped_bins_new/
+sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libcurl.so* ../../unstripped_libs_new/
 
-sudo cp -r ../../unstripped_bin_new/curl ../../stripped_bin_new/
-sudo cp -r ../../unstripped_lib_new/libcurl.so* ../../stripped_lib_new/
+sudo cp -r ../../unstripped_bins_new/curl ../../stripped_bins_new/
+sudo cp -r ../../unstripped_libs_new/libcurl.so* ../../stripped_libs_new/
 
-cd ../../stripped_bin_new/
+cd ../../stripped_bins_new/
 sudo /opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-strip curl
 
 if [ $? -eq 0 ]; then
@@ -164,11 +164,11 @@ else
 fi
 
 ls -l curl
-ls -l ../unstripped_bin_new/curl
+ls -l ../unstripped_bins_new/curl
 
 
 
-cd  ../stripped_lib_new/
+cd  ../stripped_libs_new/
 sudo /opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-strip libcurl.so.4.5.0
 
 if [ $? -eq 0 ]; then
@@ -185,7 +185,7 @@ sudo ln -s libcurl.so.4.5.0 libcurl.so
 sudo ln -s libcurl.so.4.5.0 libcurl.so.4
 
 ls -l libcurl.so*
-ls -l ../unstripped_lib_new/libcurl.so*
+ls -l ../unstripped_libs_new/libcurl.so*
 
 
 

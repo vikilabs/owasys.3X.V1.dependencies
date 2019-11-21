@@ -134,14 +134,14 @@ else
     exit 1
 fi
 
-mkdir ../../stripped_lib_new
-mkdir ../../unstripped_lib_new
+mkdir ../../stripped_libs_new
+mkdir ../../unstripped_libs_new
 
-sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libssl.so* ../../unstripped_lib_new/
+sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libssl.so* ../../unstripped_libs_new/
 
-sudo cp -r ../../unstripped_lib_new/libssl.so* ../../stripped_lib_new/
+sudo cp -r ../../unstripped_libs_new/libssl.so* ../../stripped_libs_new/
 
-cd ../../stripped_lib_new/
+cd ../../stripped_libs_new/
 sudo /opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-strip libssl.so.1.1
 
 if [ $? -eq 0 ]; then
@@ -155,6 +155,6 @@ sudo rm libssl.so
 sudo ln -s libssl.so.1.1 libssl.so
 
 ls -l libssl.so*
-ls -l ../unstripped_lib_new/libssl.so*
+ls -l ../unstripped_libs_new/libssl.so*
 
 
