@@ -88,5 +88,10 @@
 #### Mote
 
 	1. All Device startup scripts are located at "/home/userinit.sh"
+	2. Unzip Tar file
+		- gzip -d sw_pack_curl-7.owa3x.09052016.tar.gz   
+		-  tar xvf sw_pack_curl-7.owa3x.09052016.tar -C /
+	
 
+	
 
