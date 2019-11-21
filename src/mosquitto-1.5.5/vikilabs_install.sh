@@ -124,7 +124,7 @@ fi
 mkdir ../../stripped_libs_new
 mkdir ../../unstripped_libs_new
 
-sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/lib/libmosquitto.so* ../../unstripped_libs_new/
+sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libmosquitto.so* ../../unstripped_libs_new/
 
 sudo cp -r ../../unstripped_libs_new/libmosquitto.so* ../../stripped_libs_new/
 
@@ -140,10 +140,10 @@ else
     exit 1
 fi
 
-sudo rm libmosquitto.so
+sudo rm libmosquitto.so 2> /dev/null
 sudo ln -s libmosquitto.so.1 libmosquitto.so
 
-ls -l libmosquitto.so*
+ls -l libmosquitto.so* 
 ls -l ../unstripped_libs_new/libmosquitto.so*
 
 

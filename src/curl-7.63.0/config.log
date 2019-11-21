@@ -294,7 +294,7 @@ configure:6689: $? = 0
 configure:6768: arm-none-linux-gnueabi-gcc -o conftest    conftest.c  >&5
 configure:6768: $? = 0
 configure:6847: arm-none-linux-gnueabi-gcc -o conftest    conftest.c  >&5
-/tmp/ccGhCIam.o: In function `main':
+/tmp/ccuvVEGi.o: In function `main':
 conftest.c:(.text+0x8): undefined reference to `inet_ntoa_r'
 collect2: ld returned 1 exit status
 configure:6847: $? = 1
@@ -1040,7 +1040,7 @@ configure:20425: $? = 0
 configure:20427: result: yes
 configure:20445: checking for clock_gettime in libraries
 configure:20487: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers   conftest.c  >&5
-/tmp/ccW66tk7.o: In function `main':
+/tmp/ccsdpcUX.o: In function `main':
 conftest.c:(.text+0x10): undefined reference to `clock_gettime'
 collect2: ld returned 1 exit status
 configure:20487: $? = 1
@@ -2296,7 +2296,7 @@ configure:22825: checking for openssl/err.h
 configure:22825: result: yes
 configure:22882: checking for RAND_egd
 configure:22882: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccQ61BN2.o: In function `main':
+/tmp/cck75FxI.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `RAND_egd'
 collect2: ld returned 1 exit status
 configure:22882: $? = 1
@@ -2379,7 +2379,7 @@ configure:22882: $? = 0
 configure:22882: result: yes
 configure:22882: checking for SSLv2_client_method
 configure:22882: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccgbAPvh.o: In function `main':
+/tmp/ccIisiDX.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `SSLv2_client_method'
 collect2: ld returned 1 exit status
 configure:22882: $? = 1
@@ -2607,7 +2607,7 @@ configure:23014: $? = 0
 configure:23076: result: 1.1.0 - 0x101000bfL
 configure:23085: checking for OpenSSL library version
 configure:23115: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccMAjUSu.o: In function `main':
+/tmp/ccKHiryc.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `ERR_clear_last_mark'
 collect2: ld returned 1 exit status
 configure:23115: $? = 1
@@ -2704,7 +2704,7 @@ configure:25713: checking whether to use builtin CA store of SSL library
 configure:25727: result: yes
 configure:25752: checking for library containing psl_builtin
 configure:25780: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccoRRZ6K.o: In function `main':
+/tmp/ccQR9bvv.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `psl_builtin'
 collect2: ld returned 1 exit status
 configure:25780: $? = 1
@@ -14475,7 +14475,7 @@ configure:34580: checking for arpa/inet.h
 configure:34580: result: yes
 configure:34600: checking if inet_ntoa_r can be linked
 configure:34629: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccoQ5yPB.o: In function `main':
+/tmp/cc86Ll1W.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `inet_ntoa_r'
 collect2: ld returned 1 exit status
 configure:34629: $? = 1
@@ -15032,7 +15032,7 @@ configure:35751: checking if ioctlsocket might be used
 configure:35840: result: no
 configure:35852: checking if IoctlSocket can be linked
 configure:35881: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccscGmTu.o: In function `main':
+/tmp/cc8S60Pl.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `IoctlSocket'
 collect2: ld returned 1 exit status
 configure:35881: $? = 1
@@ -15643,7 +15643,7 @@ configure:37391: checking for setjmp.h
 configure:37391: result: yes
 configure:37411: checking if sigsetjmp can be linked
 configure:37440: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccERtH7p.o: In function `main':
+/tmp/ccApX47v.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `sigsetjmp'
 collect2: ld returned 1 exit status
 configure:37440: $? = 1
@@ -15954,7 +15954,7 @@ configure:38019: checking if strcasecmp might be used
 configure:38025: result: yes
 configure:38046: checking if strcmpi can be linked
 configure:38075: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccwjOwkb.o: In function `main':
+/tmp/cc0YcOH9.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `strcmpi'
 collect2: ld returned 1 exit status
 configure:38075: $? = 1
@@ -17028,7 +17028,7 @@ configure:38703: checking if strerror_r might be used
 configure:38709: result: yes
 configure:38766: checking if stricmp can be linked
 configure:38795: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccScjlJP.o: In function `main':
+/tmp/ccyH2fnp.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `stricmp'
 collect2: ld returned 1 exit status
 configure:38795: $? = 1
@@ -17309,7 +17309,7 @@ configure:39037: checking if strncasecmp might be used
 configure:39043: result: yes
 configure:39064: checking if strncmpi can be linked
 configure:39093: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccqtTjw5.o: In function `main':
+/tmp/ccM9JKCG.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `strncmpi'
 collect2: ld returned 1 exit status
 configure:39093: $? = 1
@@ -17576,7 +17576,7 @@ configure:39186: checking if strncmpi might be used
 configure:39201: result: no
 configure:39213: checking if strnicmp can be linked
 configure:39242: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccweHA7c.o: In function `main':
+/tmp/cccxagQO.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `strnicmp'
 collect2: ld returned 1 exit status
 configure:39242: $? = 1
@@ -17916,7 +17916,7 @@ configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for getpass_r
 configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccOr3LfX.o: In function `main':
+/tmp/cce3v4gO.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `getpass_r'
 collect2: ld returned 1 exit status
 configure:40027: $? = 1
@@ -18473,7 +18473,7 @@ configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for mach_absolute_time
 configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccwlHkzO.o: In function `main':
+/tmp/ccltNLjk.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `mach_absolute_time'
 collect2: ld returned 1 exit status
 configure:40027: $? = 1
@@ -19026,7 +19026,7 @@ configure:40027: $? = 0
 configure:40027: result: yes
 configure:40027: checking for setmode
 configure:40027: arm-none-linux-gnueabi-gcc -o conftest -Werror-implicit-function-declaration -O2 -Wno-system-headers     conftest.c -lssl -lcrypto -lz -lrt >&5
-/tmp/ccyFDai8.o: In function `main':
+/tmp/ccIlaacw.o: In function `main':
 conftest.c:(.text+0x4): undefined reference to `setmode'
 collect2: ld returned 1 exit status
 configure:40027: $? = 1

@@ -396,7 +396,7 @@ configure: failed program was:
 configure:4691: result: no
 configure:4701: checking for crypt
 configure:4701: arm-none-linux-gnueabi-gcc -o conftest -ffunction-sections -fdata-sections -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector --param=ssp-buffer-size=4 -D_FORTIFY_SOURCE=2  -Wl,--gc-sections -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c  >&5
-/tmp/ccsLcP62.o: In function `main':
+/tmp/ccA7naam.o: In function `main':
 conftest.c:(.text.main+0x8): undefined reference to `crypt'
 collect2: ld returned 1 exit status
 configure:4701: $? = 1
@@ -472,7 +472,7 @@ configure:4995: Disabling PAM
 configure:5071: Using openpty if available
 configure:5073: checking for library containing openpty
 configure:5104: arm-none-linux-gnueabi-gcc -o conftest -ffunction-sections -fdata-sections -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector --param=ssp-buffer-size=4 -D_FORTIFY_SOURCE=2  -Wl,--gc-sections -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -lz  >&5
-/tmp/ccqzykKc.o: In function `main':
+/tmp/cco98HBc.o: In function `main':
 conftest.c:(.text.main+0x8): undefined reference to `openpty'
 collect2: ld returned 1 exit status
 configure:5104: $? = 1
@@ -3153,7 +3153,7 @@ configure:6498: $? = 0
 configure:6498: result: yes
 configure:6511: checking for clock_gettime
 configure:6511: arm-none-linux-gnueabi-gcc -o conftest -ffunction-sections -fdata-sections -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector --param=ssp-buffer-size=4 -D_FORTIFY_SOURCE=2  -Wl,--gc-sections -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -lutil -lz  >&5
-/tmp/ccwxUs0P.o: In function `main':
+/tmp/ccYdLObj.o: In function `main':
 conftest.c:(.text.main+0x8): undefined reference to `clock_gettime'
 collect2: ld returned 1 exit status
 configure:6511: $? = 1
@@ -3514,7 +3514,7 @@ configure:6524: checking for mach/mach_time.h
 configure:6524: result: no
 configure:6536: checking for mach_absolute_time
 configure:6536: arm-none-linux-gnueabi-gcc -o conftest -ffunction-sections -fdata-sections -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector --param=ssp-buffer-size=4 -D_FORTIFY_SOURCE=2  -Wl,--gc-sections -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -lutil -lz  >&5
-/tmp/ccAMB5AV.o: In function `main':
+/tmp/cc78Qrfm.o: In function `main':
 conftest.c:(.text.main+0x8): undefined reference to `mach_absolute_time'
 collect2: ld returned 1 exit status
 configure:6536: $? = 1
@@ -3648,7 +3648,7 @@ configure: failed program was:
 configure:6536: result: no
 configure:6549: checking for explicit_bzero
 configure:6549: arm-none-linux-gnueabi-gcc -o conftest -ffunction-sections -fdata-sections -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector --param=ssp-buffer-size=4 -D_FORTIFY_SOURCE=2  -Wl,--gc-sections -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -lutil -lz  >&5
-/tmp/cccManR3.o: In function `main':
+/tmp/ccWhLjsb.o: In function `main':
 conftest.c:(.text.main+0x8): undefined reference to `explicit_bzero'
 collect2: ld returned 1 exit status
 configure:6549: $? = 1
@@ -3782,7 +3782,7 @@ configure: failed program was:
 configure:6549: result: no
 configure:6549: checking for memset_s
 configure:6549: arm-none-linux-gnueabi-gcc -o conftest -ffunction-sections -fdata-sections -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector --param=ssp-buffer-size=4 -D_FORTIFY_SOURCE=2  -Wl,--gc-sections -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -lutil -lz  >&5
-/tmp/ccEaXNd7.o: In function `main':
+/tmp/cckwP13g.o: In function `main':
 conftest.c:(.text.main+0x8): undefined reference to `memset_s'
 collect2: ld returned 1 exit status
 configure:6549: $? = 1
@@ -4569,7 +4569,7 @@ configure:7419: $? = 0
 configure:7419: result: yes
 configure:7419: checking for strlcpy
 configure:7419: arm-none-linux-gnueabi-gcc -o conftest -ffunction-sections -fdata-sections -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector --param=ssp-buffer-size=4 -D_FORTIFY_SOURCE=2  -Wl,--gc-sections -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -lutil -lz  >&5
-/tmp/ccS42QLU.o: In function `main':
+/tmp/ccazzqKb.o: In function `main':
 conftest.c:(.text.main+0x8): undefined reference to `strlcpy'
 collect2: ld returned 1 exit status
 configure:7419: $? = 1
@@ -4720,7 +4720,7 @@ configure: failed program was:
 configure:7419: result: no
 configure:7419: checking for strlcat
 configure:7419: arm-none-linux-gnueabi-gcc -o conftest -ffunction-sections -fdata-sections -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector --param=ssp-buffer-size=4 -D_FORTIFY_SOURCE=2  -Wl,--gc-sections -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -lutil -lz  >&5
-/tmp/ccAdt4lZ.o: In function `main':
+/tmp/ccmzncph.o: In function `main':
 conftest.c:(.text.main+0x8): undefined reference to `strlcat'
 collect2: ld returned 1 exit status
 configure:7419: $? = 1
@@ -4879,7 +4879,7 @@ configure:7419: $? = 0
 configure:7419: result: yes
 configure:7419: checking for _getpty
 configure:7419: arm-none-linux-gnueabi-gcc -o conftest -ffunction-sections -fdata-sections -Wno-pointer-sign -fno-strict-overflow -fPIE -fstack-protector --param=ssp-buffer-size=4 -D_FORTIFY_SOURCE=2  -Wl,--gc-sections -Wl,-pie -Wl,-z,now -Wl,-z,relro conftest.c -lutil -lz  >&5
-/tmp/ccsRvOJ9.o: In function `main':
+/tmp/ccyFd5Cn.o: In function `main':
 conftest.c:(.text.main+0x8): undefined reference to `_getpty'
 collect2: ld returned 1 exit status
 configure:7419: $? = 1
