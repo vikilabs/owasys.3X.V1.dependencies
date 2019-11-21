@@ -77,7 +77,7 @@ else
     exit 1
 fi
 
-make clean
+#make clean
 
 if [ $? -eq 0 ]; then
     echo "[ success ] Make Clean"
@@ -134,15 +134,30 @@ else
     exit 1
 fi
 
+echo "[ Checking Library ] libcrypto.so"
+ls /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libcrypto.so
+
+if [ $? -eq 0 ]; then
+    echo "[ success ] libcrypto.so exist"
+else
+    echo "[ failure ] libcrypto.so  doesn't exist"
+    exit 1
+fi
+
+
 mkdir ../../stripped_libs_new
 mkdir ../../unstripped_libs_new
 
 sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libssl.so* ../../unstripped_libs_new/
 
+sudo cp -r /opt/crosstool/arm-none-linux-gnueabi/arm-none-linux-gnueabi/libc/usr/lib/libcrypto.so* ../../unstripped_libs_new/
+
 sudo cp -r ../../unstripped_libs_new/libssl.so* ../../stripped_libs_new/
+sudo cp -r ../../unstripped_libs_new/libcrypto.so* ../../stripped_libs_new/
 
 cd ../../stripped_libs_new/
 sudo /opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-strip libssl.so.1.1
+sudo /opt/crosstool/arm-none-linux-gnueabi/bin/arm-none-linux-gnueabi-strip libcrypto.so.1.1
 
 if [ $? -eq 0 ]; then
     echo "[ success ] libssl stripped successfully"
@@ -152,9 +167,13 @@ else
 fi
 
 sudo rm libssl.so
+sudo rm libcrypto.so
 sudo ln -s libssl.so.1.1 libssl.so
+sudo ln -s libcrypto.so.1.1 libcrypto.so
 
 ls -l libssl.so*
+ls -l libcrypto.so*
 ls -l ../unstripped_libs_new/libssl.so*
+ls -l ../unstripped_libs_new/libcrypto.so*
 
 
