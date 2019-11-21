@@ -1,5 +1,7 @@
 echo "Donot copy libraries to /lib directory, create a softlink instead to save space at /root directory"
 
+echo "make sure this script is copied to the beginning of userinit.sh"
+
 SYSTEM_LIB="/lib"
 USER_LIB="/home/stripped_libs"
 
