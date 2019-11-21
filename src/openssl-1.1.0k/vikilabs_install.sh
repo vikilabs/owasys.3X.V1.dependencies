@@ -77,7 +77,7 @@ else
     exit 1
 fi
 
-#make clean
+make clean
 
 if [ $? -eq 0 ]; then
     echo "[ success ] Make Clean"
